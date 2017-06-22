@@ -24,3 +24,15 @@
     filter: blur(10px);
     z-index: 1;
 }
+
+/*search*/
+#search_container {
+    width: 50vw;
+}
+
+.search-input {
+    color: black;
+    font-size: 18px;
+    outline: none;
+    border: none;
+}

@@ -179,4 +179,24 @@
         }
 
     }());
+
+    // 搜索功能
+    (function () {
+        var search = document.querySelector('#search');
+
+        search.addEventListener('click', function () {
+          // main content add mask
+          var mainWrap = document.querySelector('#main-wrap');
+          var mask = document.createElement('div')
+              mask.className = 'mask'
+              mainWrap.appendChild(mask)
+
+          // hidden nav menu
+          var nav_menu = document.querySelector('.nav-menu');
+              nav_menu.classList.add('is-invisible');
+
+          var search_container = document.querySelector('#search_container');
+              search_container.classList.remove('is-hidden')
+      })
+    }());
 })(jQuery);

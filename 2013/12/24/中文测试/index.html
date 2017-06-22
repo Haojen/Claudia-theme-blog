@@ -47,18 +47,28 @@
         <span></span>
         <span></span>
       </span>
+      <div class="nav-center is-hidden" id="search_container">
+          <div class="nav-item full-width full-height">
+              <i class="fa fa-search has-padding" aria-hidden="true"></i>
+              <input type="text" class="search-input full-height full-width" placeholder="Search post" autofocus>
+              <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
+          </div>
+      </div>
       <div class="nav-right nav-menu">
-          
-            <a class="nav-item" href="/Black-bird-demo/">
-              Home
-            </a>
-          
+        
+          <a class="nav-item" href="/Black-bird-demo/">
+            Home
+          </a>
+        
+        <a class="nav-item" id="search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </a>
       </div>
     </nav>
   </div>
 </header>
 
-  <div style="margin-top: 55px;">
+  <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
       <!--博文页面-->
 
 <style>
@@ -99,7 +109,6 @@
                 <span style="padding:0 10px;"> <span class="sub-title">By</span> User Name</span>
                 <span class="post-date sub-title">at: 2013-12-24</span>
             </div>
-
             
                 <div>
                     
@@ -117,6 +126,31 @@
 </blockquote>
 <p><em>From <a href="http://www.richyli.com/tool/loremipsum/" target="_blank" rel="external">亂數假文產生器 - Chinese Lorem Ipsum</a></em></p>
 
+        </div>
+        <div class="post-reply">
+            
+            
+                <div id="disqus_thread"></div>
+                <script>
+
+                    /**
+                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                    /*
+                     var disqus_config = function () {
+                     this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                     };
+                     */
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://haojen.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            
         </div>
     </div>
 </section>

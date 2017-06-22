@@ -44,18 +44,28 @@
         <span></span>
         <span></span>
       </span>
+      <div class="nav-center is-hidden" id="search_container">
+          <div class="nav-item full-width full-height">
+              <i class="fa fa-search has-padding" aria-hidden="true"></i>
+              <input type="text" class="search-input full-height full-width" placeholder="Search post" autofocus>
+              <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
+          </div>
+      </div>
       <div class="nav-right nav-menu">
-          
-            <a class="nav-item" href="/Black-bird-demo/">
-              Home
-            </a>
-          
+        
+          <a class="nav-item" href="/Black-bird-demo/">
+            Home
+          </a>
+        
+        <a class="nav-item" id="search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </a>
       </div>
     </nav>
   </div>
 </header>
 
-  <div style="margin-top: 55px;">
+  <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
       <style>
     .info-box {
         min-height: 93vh;
