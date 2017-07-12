@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html class="full-height">
 <head>
-  <meta charset="utf-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   <link rel="stylesheet" href="//cdn.bootcss.com/bulma/0.4.1/css/bulma.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   
   <title>Images | Haojen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="This is a image test post.">
+  <meta name="description" content="This is a image test post.   图片来自电影《127小时》    图片来自电影《2001太空漫游》    图片来自纪录片《寻找小糖人》">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Images">
 <meta property="og:url" content="https://haojen.github.io/Black-bird-demo/2013/12/26/images/index.html">
 <meta property="og:site_name" content="Haojen">
-<meta property="og:description" content="This is a image test post.">
-<meta property="og:image" content="https://haojen.github.io/assets/wallpaper-2572384.jpg">
-<meta property="og:image" content="https://haojen.github.io/assets/wallpaper-2311325.jpg">
-<meta property="og:image" content="https://haojen.github.io/assets/wallpaper-878514.jpg">
+<meta property="og:description" content="This is a image test post.   图片来自电影《127小时》    图片来自电影《2001太空漫游》    图片来自纪录片《寻找小糖人》">
+<meta property="og:image" content="https://williamjepma.files.wordpress.com/2013/09/127_hours1.jpg">
+<meta property="og:image" content="https://interactiondesign.files.wordpress.com/2012/03/monolith-sun.jpg">
+<meta property="og:image" content="https://nypdecider.files.wordpress.com/2014/10/searching-for-sugar-man1.png?w=646&h=335&crop=1">
 <meta property="og:image" content="http://placehold.it/350x150.jpg">
-<meta property="og:updated_time" content="2017-05-26T15:02:24.000Z">
+<meta property="og:updated_time" content="2017-07-10T00:47:43.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Images">
-<meta name="twitter:description" content="This is a image test post.">
-<meta name="twitter:image" content="https://haojen.github.io/assets/wallpaper-2572384.jpg">
+<meta name="twitter:description" content="This is a image test post.   图片来自电影《127小时》    图片来自电影《2001太空漫游》    图片来自纪录片《寻找小糖人》">
+<meta name="twitter:image" content="https://williamjepma.files.wordpress.com/2013/09/127_hours1.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Haojen" type="application/atom+xml">
   
@@ -33,48 +33,74 @@
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
   <link rel="stylesheet" href="/Black-bird-demo/css/common.css">
-  <link rel="stylesheet" href="/Black-bird-demo/css/nav.css">
+<link rel="stylesheet" href="/Black-bird-demo/css/nav.css">
+<link rel="stylesheet" href="/Black-bird-demo/css/layout.css"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 </head>
 
 <body>
-  <header id="navbar" class="overflow-hidden">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><header id="navbar" class="overflow-hidden">
   <div class="container">
-    <nav class="nav" style="background-color: rgba(255,255,255,0.88);">
-      <div class="nav-left">
-        <a href="/Black-bird-demo/" class="nav-item" style="font-size: 20px;">
-          <span class="logo">Haojen Ma</span>'s Blog
-        </a>
-      </div>
-      <span class="nav-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </span>
-      <div class="nav-center is-hidden" id="search_container">
-          <div class="nav-item full-width full-height">
-              <i class="fa fa-search has-padding" aria-hidden="true"></i>
-              <input type="text" class="search-input full-height full-width" placeholder="Search post" autofocus>
-              <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
-          </div>
-      </div>
-      <div class="nav-right nav-menu">
-        
-          <a class="nav-item" href="/Black-bird-demo/">
-            Home
-          </a>
-        
-        <a class="nav-item" id="search">
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </a>
-      </div>
+    <nav class="nav">
+         <div class="nav-left">
+            <a href="/Black-bird-demo/" class="nav-item" style="font-size: 20px;">
+              <span class="logo">Diskobólos</span>'s Blog
+            </a>
+         </div>
+        <div class="nav-center is-hidden position-relative" id="search_container">
+            <div class="nav-item full-width full-height">
+                <i class="fa fa-search has-padding" aria-hidden="true"></i>
+                <input type="text" id="search_input" class="search-input full-height full-width" placeholder="Search post" autofocus>
+                <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div id="search_result"></div>
+        </div>
+        <div class="nav-right nav-menu">
+            <a class="nav-item" id="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+            
+            <a class="nav-item" href="/Black-bird-demo/">
+                Home
+            </a>
+            
+            <a class="nav-item" href="/Black-bird-demo/works">
+                My Works
+            </a>
+            
+            <a class="nav-item" href="/Black-bird-demo/about">
+                About
+            </a>
+            
+        </div>
+        <span class="nav-toggle" id="navMenuDropdown">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        <div class="navbar-menu position-absolute full-width content-box is-hidden-desktop is-flex flex-column center" style="top: 100%;">
+            
+            <a class="nav-item flex-1" href="/Black-bird-demo/">
+                Home
+            </a>
+            
+            <a class="nav-item flex-1" href="/Black-bird-demo/works">
+                My Works
+            </a>
+            
+            <a class="nav-item flex-1" href="/Black-bird-demo/about">
+                About
+            </a>
+            
+        </div>
     </nav>
   </div>
 </header>
 
   <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
-      <!--博文页面-->
+      <div class="main-inner-content">
+          <!--博文页面-->
 
 <style>
     .header-box {
@@ -98,20 +124,28 @@
         width: 30px;
         border-radius: 50%;
     }
+
+    .flow-chart {
+        text-align: center;
+    }
+
+    img[alt="post-cover"] {
+        display: none;
+    }
 </style>
 <header>
     <div id="header_box" class="header-box"></div>
 </header>
 <section>
     <div class="container post-box">
-        <div class="content post-title is-flex center flex-column" style="margin-bottom: 70px">
+        <div class="content post-title is-flex center flex-column" style="margin-bottom: 70px; overflow: auto;">
             <h1 class="has-text-centered" style="padding-bottom: 10px; border-bottom: 3px solid #fff">
                 <strong>Images</strong>
             </h1>
             
             <div class="is-flex align-center">
                 <img class="post-avatar" src="https://cdn2.iconfinder.com/data/icons/rcons-user/32/male-shadow-circle-512.png">
-                <span style="padding:0 10px;"> <span class="sub-title">By</span> User Name</span>
+                <span style="padding:0 10px;"> <span class="sub-title">By</span> Diskobólos</span>
                 <span class="post-date sub-title">at: 2013-12-26</span>
             </div>
             
@@ -120,18 +154,27 @@
                 </div>
             
         </div>
-        <div class="content">
+        <div class="content" style="overflow: auto">
             <p>This is a image test post.</p>
-<p><img src="/assets/wallpaper-2572384.jpg" alt=""></p>
-<p><img src="/assets/wallpaper-2311325.jpg" alt="Caption"></p>
-<p><img src="/assets/wallpaper-878514.jpg" alt=""></p>
+<p><img src="https://williamjepma.files.wordpress.com/2013/09/127_hours1.jpg" alt="Caption"></p>
+<blockquote>
+<p>图片来自电影《127小时》</p>
+</blockquote>
+<p><img src="https://interactiondesign.files.wordpress.com/2012/03/monolith-sun.jpg" alt=""></p>
+<blockquote>
+<p>图片来自电影《2001太空漫游》</p>
+</blockquote>
+<p><img src="https://nypdecider.files.wordpress.com/2014/10/searching-for-sugar-man1.png?w=646&amp;h=335&amp;crop=1" alt=""></p>
+<blockquote>
+<p>图片来自纪录片《寻找小糖人》</p>
+</blockquote>
 <p><img src="http://placehold.it/350x150.jpg" alt="Small Picture"></p>
 
         </div>
         <div class="post-reply">
             
             
-                <div id="disqus_thread"></div>
+                <div id="disqus_thread" style="width: 80%; margin: 0 auto;"></div>
                 <script>
 
                     /**
@@ -162,6 +205,7 @@
     header_box.style.backgroundImage = 'url('+ img.src +')'
 </script>
 
+      </div>
   </div>
   <style>
   #footer {
@@ -178,25 +222,34 @@
   <div class="container has-padding">
     <div>
       <div>
+        <!--请您保留作者署名, 主题制作来之不易-->
         Theme by <a href="http://haojen.github.io/">Haojen Ma</a>
         <br>
         Copyright © Haojen Ma 2017
         <br>
-        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
       </div>
     </div>
-    
-
-<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>-->
-
-
-  <link rel="stylesheet" href="/Black-bird-demo/fancybox/jquery.fancybox.css">
-  <script src="/Black-bird-demo/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/Black-bird-demo/js/script.js"></script>
-
   </div>
 </footer>
+
+<script src="/Black-bird-demo/js/search_core.js"></script>
+<script src="/Black-bird-demo/js/script.js"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>

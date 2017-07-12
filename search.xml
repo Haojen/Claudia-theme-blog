@@ -3,12 +3,90 @@
   
     
     <entry>
+      <title><![CDATA[Flowchart Demo]]></title>
+      <url>/Black-bird-demo/2017/07/09/Flowchart-Demo/</url>
+      <content type="html"><![CDATA[<p><img src="http://www.success.com/sites/default/files/main/blogposts/secretsofthemindhighlysuccessfulpeopleknowthatyoudont.jpg" alt="post-cover"></p>
+<blockquote>
+<p>使用教程请参阅<a href="https://github.com/bubkoo/hexo-filter-flowchart" target="_blank" rel="external">这篇文档</a></p>
+</blockquote>
+<p><div id="flowchart-0" class="flow-chart"></div></p>
+<p><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: Start|past:>http://www.google.com[blank]
+e=>end: End:>http://www.google.com
+op1=>operation: My Operation|past
+op2=>operation: Stuff|current
+sub1=>subroutine: My Subroutine|invalid
+cond=>condition: Yes
+or No?|approved:>http://www.google.com
+c2=>condition: Good idea|rejected
+io=>inputoutput: catch something...|request
+
+st->op1(right)->cond
+cond(yes, right)->c2
+cond(no)->sub1(left)->op1
+c2(yes)->io->e
+c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Emoji-Demo]]></title>
+      <url>/Black-bird-demo/2017/07/06/Emoji-Demo/</url>
+      <content type="html"><![CDATA[<p><img src="https://blogdeshark.files.wordpress.com/2014/10/pia14293_achicado_nasa.jpg" alt="post-cover"></p>
+<h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法:"></a>使用方法:</h1><p>比如你想发一个笑脸<img class="github-emoji" title="smile" alt="smile" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png?v7" height="20" width="20"> 直接输入笑脸对应的 emmoji 编码 <code>&lt;img class=&quot;github-emoji&quot;  title=&quot;smile&quot; alt=&quot;smile&quot; src=&quot;https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png?v7&quot; height=&quot;20&quot; width=&quot;20&quot; /&gt;</code>就可以<br>具体使用教程请参阅这篇<a href="https://github.com/crimx/hexo-filter-github-emojis" target="_blank" rel="external">文档</a>和 <a href="https://www.webpagefx.com/tools/emoji-cheat-sheet/" target="_blank" rel="external">Emoji cheat sheet</a></p>
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><h2 id="Smileys-amp-People"><a href="#Smileys-amp-People" class="headerlink" title="Smileys &amp; People"></a>Smileys &amp; People</h2><p>Find emojis by name or description</p>
+<p>😀 😬 😁 😂 😃 😄 😅 😆 😇 😉 😊 🙂 🙃 ☺️ 😋 😌 😍 😘 😗 😙 😚 😜 😝 😛 🤑 🤓 😎 🤗 😏 😶 😐 😑 😒 🙄 🤔 😳 😞 😟 😠 😡 😔 😕 🙁 ☹️ 😣 😖 😫 😩 😤 😮 😱 😨 😰 😯 😦 😧 😢 😥 😪 😓 😭 😵 😲 🤐 😷 🤒 🤕 😴 💤 💩 😈 👿 👹 👺 💀 👻 👽 🤖 😺 😸 😹 😻 😼 😽 🙀 😿 😾 🙌 👏 👋 👍 👊 ✊ ✌️ 👌 ✋ 💪 🙏 ☝️ 👆 👇 👈 👉 🖕 🤘 🖖 ✍️ 💅 👄 👅 👂 👃 👁 👀 👤 🗣 👶 👦 👧 👨 👩 👱 👴 👵 👲 👳 👮 👷 💂 🕵 🎅 👼 👸 👰 🚶 🏃 💃 👯 👫 👬 👭 🙇 💁 🙅 🙆 🙋 🙎 🙍 💇 💆 💑 👩‍❤️‍👩 👨‍❤️‍👨 💏 👩‍❤️‍💋‍👩 👨‍❤️‍💋‍👨 👪 👨‍👩‍👧 👨‍👩‍👧‍👦 👨‍👩‍👦‍👦 👨‍👩‍👧‍👧 👩‍👩‍👦 👩‍👩‍👧 👩‍👩‍👧‍👦 👩‍👩‍👦‍👦 👩‍👩‍👧‍👧 👨‍👨‍👦 👨‍👨‍👧 👨‍👨‍👧‍👦 👨‍👨‍👦‍👦 👨‍👨‍👧‍👧 👚 👕 👖 👔 👗 👙 👘 💄 💋 👣 👠 👡 👢 👞 👟 👒 🎩 ⛑ 🎓 👑 🎒 👝 👛 👜 💼 👓 🕶 💍 🌂</p>
+<h2 id="Pale-Emojis"><a href="#Pale-Emojis" class="headerlink" title="Pale Emojis"></a>Pale Emojis</h2><p>👦🏻 👧🏻 👨🏻 👩🏻 👴🏻 👵🏻 👶🏻 👱🏻 👮🏻 👲🏻 👳🏻 👷🏻 👸🏻 💂🏻 🎅🏻 👼🏻 💆🏻 💇🏻 👰🏻 🙍🏻 🙎🏻 🙅🏻 🙆🏻 💁🏻 🙋🏻 🙇🏻 🙌🏻 🙏🏻 🚶🏻 🏃🏻 💃🏻 💪🏻 👈🏻 👉🏻 ☝️🏻 👆🏻 🖕🏻 👇🏻 ✌️🏻 🖖🏻 🤘🏻 🖐🏻 ✊🏻 ✋🏻 👊🏻 👌🏻 👍🏻 👎🏻 👋🏻 👏🏻 👐🏻 ✍🏻 💅🏻 👂🏻 👃🏻 🚣🏻 🛀🏻 🏄🏻 🏇🏻 🏊🏻 ⛹🏻 🏋🏻 🚴🏻 🚵🏻</p>
+<h2 id="Cream-White-Emojis"><a href="#Cream-White-Emojis" class="headerlink" title="Cream White Emojis"></a>Cream White Emojis</h2><p>👦🏼 👧🏼 👨🏼 👩🏼 👴🏼 👵🏼 👶🏼 👱🏼 👮🏼 👲🏼 👳🏼 👷🏼 👸🏼 💂🏼 🎅🏼 👼🏼 💆🏼 💇🏼 👰🏼 🙍🏼 🙎🏼 🙅🏼 🙆🏼 💁🏼 🙋🏼 🙇🏼 🙌🏼 🙏🏼 🚶🏼 🏃🏼 💃🏼 💪🏼 👈🏼 👉🏼 ☝️🏼 👆🏼 🖕🏼 👇🏼 ✌️🏼 🖖🏼 🤘🏼 🖐🏼 ✊🏼 ✋🏼 👊🏼 👌🏼 👍🏼 👎🏼 👋🏼 👏🏼 👐🏼 ✍🏼 💅🏼 👂🏼 👃🏼 🚣🏼 🛀🏼 🏄🏼 🏇🏼 🏊🏼 ⛹🏼 🏋🏼 🚴🏼 🚵🏼</p>
+<h2 id="Moderate-Brown-Emojis"><a href="#Moderate-Brown-Emojis" class="headerlink" title="Moderate Brown Emojis"></a>Moderate Brown Emojis</h2><p>👦🏽 👧🏽 👨🏽 👩🏽 👴🏽 👵🏽 👶🏽 👱🏽 👮🏽 👲🏽 👳🏽 👷🏽 👸🏽 💂🏽 🎅🏽 👼🏽 💆🏽 💇🏽 👰🏽 🙍🏽 🙎🏽 🙅🏽 🙆🏽 💁🏽 🙋🏽 🙇🏽 🙌🏽 🙏🏽 🚶🏽 🏃🏽 💃🏽 💪🏽 👈🏽 👉🏽 ☝️🏽 👆🏽 🖕🏽 👇🏽 ✌️🏽 🖖🏽 🤘🏽 🖐🏽 ✊🏽 ✋🏽 👊🏽 👌🏽 👍🏽 👎🏽 👋🏽 👏🏽 👐🏽 ✍🏽 💅🏽 👂🏽 👃🏽 🚣🏽 🛀🏽 🏄🏽 🏇🏽 🏊🏽 ⛹🏽 🏋🏽 🚴🏽 🚵🏽</p>
+<h2 id="Dark-Brown-Emojis"><a href="#Dark-Brown-Emojis" class="headerlink" title="Dark Brown Emojis"></a>Dark Brown Emojis</h2><p>👦🏾 👧🏾 👨🏾 👩🏾 👴🏾 👵🏾 👶🏾 👱🏾 👮🏾 👲🏾 👳🏾 👷🏾 👸🏾 💂🏾 🎅🏾 👼🏾 💆🏾 💇🏾 👰🏾 🙍🏾 🙎🏾 🙅🏾 🙆🏾 💁🏾 🙋🏾 🙇🏾 🙌🏾 🙏🏾 🚶🏾 🏃🏾 💃🏾 💪🏾 👈🏾 👉🏾 ☝️🏾 👆🏾 🖕🏾 👇🏾 ✌️🏾 🖖🏾 🤘🏾 🖐🏾 ✊🏾 ✋🏾 👊🏾 👌🏾 👍🏾 👎🏾 👋🏾 👏🏾 👐🏾 ✍🏾 💅🏾 👂🏾 👃🏾 🚣🏾 🛀🏾 🏄🏾 🏇🏾 🏊🏾 ⛹🏾 🏋🏾 🚴🏾 🚵🏾</p>
+<h2 id="Black-Emojis"><a href="#Black-Emojis" class="headerlink" title="Black Emojis"></a>Black Emojis</h2><p>👦🏿 👧🏿 👨🏿 👩🏿 👴🏿 👵🏿 👶🏿 👱🏿 👮🏿 👲🏿 👳🏿 👷🏿 👸🏿 💂🏿 🎅🏿 👼🏿 💆🏿 💇🏿 👰🏿 🙍🏿 🙎🏿 🙅🏿 🙆🏿 💁🏿 🙋🏿 🙇🏿 🙌🏿 🙏🏿 🚶🏿 🏃🏿 💃🏿 💪🏿 👈🏿 👉🏿 ☝️🏿 👆🏿 🖕🏿 👇🏿 ✌️🏿 🖖🏿 🤘🏿 🖐🏿 ✊🏿 ✋🏿 👊🏿 👌🏿 👍🏿 👎🏿 👋🏿 👏🏿 👐🏿 ✍🏿 💅🏿 👂🏿 👃🏿 🚣🏿 🛀🏿 🏄🏿 🏇🏿 🏊🏿 ⛹🏿 🏋🏿 🚴🏿 🚵🏿</p>
+<h2 id="Animals-amp-Nature"><a href="#Animals-amp-Nature" class="headerlink" title="Animals &amp; Nature"></a>Animals &amp; Nature</h2><p>🐶 🐱 🐭 🐹 🐰 🐻 🐼 🐨 🐯 🦁 🐮 🐷 🐽 🐸 🐙 🐵 🙈 🙉 🙊 🐒 🐔 🐧 🐦 🐤 🐣 🐥 🐺 🐗 🐴 🦄 🐝 🐛 🐌 🐞 🐜 🕷 🦂 🦀 🐍 🐢 🐠 🐟 🐡 🐬 🐳 🐋 🐊 🐆 🐅 🐃 🐂 🐄 🐪 🐫 🐘 🐐 🐏 🐑 🐎 🐖 🐀 🐁 🐓 🦃 🕊 🐕 🐩 🐈 🐇 🐿 🐾 🐉 🐲 🌵 🎄 🌲 🌳 🌴 🌱 🌿 ☘ 🍀 🎍 🎋 🍃 🍂 🍁 🌾 🌺 🌻 🌹 🌷 🌼 🌸 💐 🍄 🌰 🎃 🐚 🕸 🌎 🌍 🌏 🌕 🌖 🌗 🌘 🌑 🌒 🌓 🌔 🌚 🌝 🌛 🌜 🌞 🌙 ⭐️ 🌟 💫 ✨ ☄ ☀️ 🌤 ⛅️ 🌥 🌦 ☁️ 🌧 ⛈ 🌩 ⚡️ 🔥 💥 ❄️ 🌨 🔥 💥 ❄️ 🌨 ☃️ ⛄️ 🌬 💨 🌪 🌫 ☂️ ☔️ 💧 💦 🌊</p>
+<h2 id="Food-amp-Drink"><a href="#Food-amp-Drink" class="headerlink" title="Food &amp; Drink"></a>Food &amp; Drink</h2><p>🍏 🍎 🍐 🍊 🍋 🍌 🍉 🍇 🍓 🍈 🍒 🍑 🍍 🍅 🍆 🌶 🌽 🍠 🍯 🍞 🧀 🍗 🍖 🍤 🍳 🍔 🍟 🌭 🍕 🍝 🌮 🌯 🍜 🍲 🍥 🍣 🍱 🍛 🍙 🍚 🍘 🍢 🍡 🍧 🍨 🍦 🍰 🎂 🍮 🍬 🍭 🍫 🍿 🍩 🍪 🍺 🍻 🍷 🍸 🍹 🍾 🍶 🍵 ☕️ 🍼 🍴 🍽</p>
+<h2 id="Activity-and-Sports"><a href="#Activity-and-Sports" class="headerlink" title="Activity and Sports"></a>Activity and Sports</h2><p>⚽️ 🏀 🏈 ⚾️ 🎾 🏐 🏉 🎱 ⛳️ 🏌 🏓 🏸 🏒 🏑 🏏 🎿 ⛷ 🏂 ⛸ 🏹 🎣 🚣 🏊 🏄 🛀 ⛹ 🏋 🚴 🚵 🏇 🕴 🏆 🎽 🏅 🎖 🎗 🏵 🎫 🎟 🎭 🎨 🎪 🎤 🎧 🎼 🎹 🎷 🎺 🎸 🎻 🎬 🎮 👾 🎯 🎲 🎰 🎳</p>
+<h2 id="Travel-amp-Places"><a href="#Travel-amp-Places" class="headerlink" title="Travel &amp; Places"></a>Travel &amp; Places</h2><p>🚗 🚕 🚙 🚌 🚎 🏎 🚓 🚑 🚒 🚐 🚚 🚛 🚜 🏍 🚲 🚨 🚔 🚍 🚘 🚖 🚡 🚠 🚟 🚃 🚋 🚝 🚄 🚅 🚈 🚞 🚂 🚆 🚇 🚊 🚉 🚁 🛩 ✈️ 🛫 🛬 ⛵️ 🛥 🚤 ⛴ 🛳 🚀 🛰 💺 ⚓️ 🚧 ⛽️ 🚏 🚦 🚥 🏁 🚢 🎡 🎢 🎠 🏗 🌁 🗼 🏭 ⛲️ 🎑 ⛰ 🏔 🗻 🌋 🗾 🏕 ⛺️ 🏞 🛣 🛤 🌅 🌄 🏜 🏖 🏝 🌇 🌆 🏙 🌃 🌉 🌌 🌠 🎇 🎆 🌈 🏘 🏰 🏯 🏟 🗽 🏠 🏡 🏚 🏢 🏬 🏣 🏤 🏥 🏦 🏨 🏪 🏫 🏩 💒 🏛 ⛪️ 🕌 🕍 🕋 ⛩</p>
+<h2 id="Objects"><a href="#Objects" class="headerlink" title="Objects"></a>Objects</h2><p>⌚️ 📱 📲 💻 ⌨ 🖥 🖨 🖱 🖲 🕹 🗜 💽 💾 💿 📀 📼 📷 📸 📹 🎥 📽 🎞 📞 ☎️ 📟 📠 📺 📻 🎙 🎚 🎛 ⏱ ⏲ ⏰ 🕰 ⏳ ⌛️ 📡 🔋 🔌 💡 🔦 🕯 🗑 🛢 💸 💵 💴 💶 💷 💰 💳 💎 ⚖ 🔧 🔨 ⚒ 🛠 ⛏ 🔩 ⚙ ⛓ 🔫 💣 🔪 🗡 ⚔ 🛡 🚬 ☠ ⚰ ⚱ 🏺 🔮 📿 💈 ⚗ 🔭 🔬 🕳 💊 💉 🌡 🏷 🔖 🚽 🚿 🛁 🔑 🗝 🛋 🛌 🛏 🚪 🛎 🖼 🗺 ⛱ 🗿 🛍 🎈 🎏 🎀 🎁 🎊 🎉 🎎 🎐 🎌 🏮 ✉️ 📩 📨 📧 💌 📮 📪 📫 📬 📭 📦 📯 📥 📤 📜 📃 📑 📊 📈 📉 📄 📅 📆 🗓 📇 🗃 🗳 🗄 📋 🗒 📁 📂 🗂 🗞 📰 📓 📕 📗 📘 📙 📔 📒 📚 📖 🔗 📎 🖇 ✂️ 📐 📏 📌 📍 🚩 🏳 🏴 🔐 🔒 🔓 🔏 🖊 🖊 🖋 ✒️ 📝 ✏️ 🖍 🖌 🔍 🔎</p>
+<h2 id="Symbols"><a href="#Symbols" class="headerlink" title="Symbols"></a>Symbols</h2><p>❤️ 💛 💙 💜 💔 ❣️ 💕 💞 💓 💗 💖 💘 💝 💟 ☮ ✝️ ☪ 🕉 ☸ ✡️ 🔯 🕎 ☯️ ☦ 🛐 ⛎ ♈️ ♉️ ♊️ ♋️ ♌️ ♍️ ♎️ ♏️ ♐️ ♑️ ♒️ ♓️ 🆔 ⚛ 🈳 🈹 ☢ ☣ 📴 📳 🈶 🈚️ 🈸 🈺 🈷️ ✴️ 🆚 🉑 💮 🉐 ㊙️ ㊗️ 🈴 🈵 🈲 🅰️ 🅱️ 🆎 🆑 🅾️ 🆘 ⛔️ 📛 🚫 ❌ ⭕️ 💢 ♨️ 🚷 🚯 🚳 🚱 🔞 📵 ❗️ ❕ ❓ ❔ ‼️ ⁉️ 💯 🔅 🔆 🔱 ⚜ 〽️ ⚠️ 🚸 🔰 ♻️ 🈯️ 💹 ❇️ ✳️ ❎ ✅ 💠 🌀 ➿ 🌐 Ⓜ️ 🏧 🈂️ 🛂 🛃 🛄 🛅 ♿️ 🚭 🚾 🅿️ 🚰 🚹 🚺 🚼 🚻 🚮 🎦 📶 🈁 🆖 🆗 🆙 🆒 🆕 🆓 0️⃣ 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣ 7️⃣ 8️⃣ 9️⃣ 🔟 🔢 ▶️ ⏸ ⏯ ⏹ ⏺ ⏭ ⏮ ⏩ ⏪ 🔀 🔁 🔂 ◀️ 🔼 🔽 ⏫ ⏬ ➡️ ⬅️ ⬆️ ⬇️ ↗️ ↘️ ↙️ ↖️ ↕️ ↔️ 🔄 ↪️ ↩️ ⤴️ ⤵️ #️⃣ *️⃣ ℹ️ 🔤 🔡 🔠 🔣 🎵 🎶 〰️ ➰ ✔️ 🔃 ➕ ➖ ➗ ✖️ 💲 💱 ©️ ®️ ™️ 🔚 🔙 🔛 🔝 🔜 ☑️ 🔘 ⚪️ ⚫️ 🔴 🔵 🔸 🔹 🔶 🔷 🔺 ▪️ ▫️ ⬛️ ⬜️ 🔻 ◼️ ◻️ ◾️ ◽️ 🔲 🔳 🔈 🔉 🔊 🔇 📣 📢 🔔 🔕 🃏 🀄️ ♠️ ♣️ ♥️ ♦️ 🎴 👁‍🗨 💭 🗯 💬 🕐 🕑 🕒 🕓 🕔 🕕 🕖 🕗 🕘 🕙 🕚 🕛 🕜 🕝 🕞 🕟 🕠 🕡 🕢 🕣 🕤 🕥 🕦 🕧</p>
+<h2 id="Flags"><a href="#Flags" class="headerlink" title="Flags"></a>Flags</h2><p>🇦🇫 🇦🇽 🇦🇱 🇩🇿 🇦🇸 🇦🇩 🇦🇴 🇦🇮 🇦🇶 🇦🇬 🇦🇷 🇦🇲 🇦🇼 🇦🇺 🇦🇹 🇦🇿 🇧🇸 🇧🇭 🇧🇩 🇧🇧 🇧🇾 🇧🇪 🇧🇿 🇧🇯 🇧🇲 🇧🇹 🇧🇴 🇧🇶 🇧🇦 🇧🇼 🇧🇷 🇮🇴 🇻🇬 🇧🇳 🇧🇬 🇧🇫 🇧🇮 🇨🇻 🇰🇭 🇨🇲 🇨🇦 🇮🇨 🇰🇾 🇨🇫 🇹🇩 🇨🇱 🇨🇳 🇨🇽 🇨🇨 🇨🇴 🇰🇲 🇨🇬 🇨🇩 🇨🇰 🇨🇷 🇭🇷 🇨🇺 🇨🇼 🇨🇾 🇨🇿 🇩🇰 🇩🇯 🇩🇲 🇩🇴 🇪🇨 🇪🇬 🇸🇻 🇬🇶 🇪🇷 🇪🇪 🇪🇹 🇪🇺 🇫🇰 🇫🇴 🇫🇯 🇫🇮 🇫🇷 🇬🇫 🇵🇫 🇹🇫 🇬🇦 🇬🇲 🇬🇪 🇩🇪 🇬🇭 🇬🇮 🇬🇷 🇬🇱 🇬🇩 🇬🇵 🇬🇺 🇬🇹 🇬🇬 🇬🇳 🇬🇼 🇬🇾 🇭🇹 🇭🇳 🇭🇰 🇭🇺 🇮🇸 🇮🇳 🇮🇩 🇮🇷 🇮🇶 🇮🇪 🇮🇲 🇮🇱 🇮🇹 🇨🇮 🇯🇲 🇯🇵 🇯🇪 🇯🇴 🇰🇿 🇰🇪 🇰🇮 🇽🇰 🇰🇼 🇰🇬 🇱🇦 🇱🇻 🇱🇧 🇱🇸 🇱🇷 🇱🇾 🇱🇮 🇱🇹 🇱🇺 🇲🇴 🇲🇰 🇲🇬 🇲🇼 🇲🇾 🇲🇻 🇲🇱 🇲🇹 🇲🇭 🇲🇶 🇲🇷 🇲🇺 🇾🇹 🇲🇽 🇫🇲 🇲🇩 🇲🇨 🇲🇳 🇲🇪 🇲🇸 🇲🇦 🇲🇿 🇲🇲 🇳🇦 🇳🇷 🇳🇵 🇳🇱 🇳🇨 🇳🇿 🇳🇮 🇳🇪 🇳🇬 🇳🇺 🇳🇫 🇲🇵 🇰🇵 🇳🇴 🇴🇲 🇵🇰 🇵🇼 🇵🇸 🇵🇦 🇵🇬 🇵🇾 🇵🇪 🇵🇭 🇵🇳 🇵🇱 🇵🇹 🇵🇷 🇶🇦 🇷🇪 🇷🇴 🇷🇺 🇷🇼 🇧🇱 🇸🇭 🇰🇳 🇱🇨 🇵🇲 🇻🇨 🇼🇸 🇸🇲 🇸🇹 🇸🇦 🇸🇳 🇷🇸 🇸🇨 🇸🇱 🇸🇬 🇸🇽 🇸🇰 🇸🇮 🇸🇧 🇸🇴 🇿🇦 🇬🇸 🇰🇷 🇸🇸 🇪🇸 🇱🇰 🇸🇩 🇸🇷 🇸🇿 🇸🇪 🇨🇭 🇸🇾 🇹🇼 🇹🇯 🇹🇿 🇹🇭 🇹🇱 🇹🇬 🇹🇰 🇹🇴 🇹🇹 🇹🇳 🇹🇷 🇹🇲 🇹🇨 🇹🇻 🇺🇬 🇺🇦 🇦🇪 🇬🇧 🇺🇸 🇻🇮 🇺🇾 🇺🇿 🇻🇺 🇻🇦 🇻🇪 🇻🇳 🇼🇫 🇪🇭 🇾🇪 🇿🇲 🇿🇼</p>
+<p>☺️ ☹ ☝️ ✌️ ✍️ ❤️ ❣️ ☠ ♨️ ✈️ ⌛ ⌚ ♈ ♉ ♊ ♋ ♌ ♍ ♎ ♏ ♐ ♑ ♒ ♓ ☀️ ☁️ ☂️ ❄️ ⛄️ ☄ ♠️ ♥️ ♦️ ♣️ ▶️ ◀️ ☎️ ⌨ ✉️ ✏️ ✒️ ✂️ ↗️ ➡️ ↘️ ↙️ ↖️ ↕️ ↔️ ↩️ ↪️ ✡️ ☸ ☯️ ✝️ ☦ ☪ ☮ ☢ ☣ ☑️ ✔️ ✖️ ✳️ ✴️ ❇️ ‼️ ©️ ®️ ™️ Ⓜ️ ▪️ ▫️ #⃣️ *️⃣ 0⃣️ 1⃣️ 2⃣️ 3⃣️ 4⃣️ 5⃣️ 6⃣️ 7⃣️ 8⃣️ 9⃣️ ⁉️ ℹ️ ⤴️ ⤵️ ♻️ ◻️ ◼️ ◽ ◾ ☕ ⚠️ ☔ ⏏ ⬆️ ⬇️ ⬅️ ⚡ ☘ ⚓ ♿ ⚒ ⚙ ⚗ ⚖ ⚔ ⚰ ⚱ ⚜ ⚛ ⚪ ⚫ 🀄 ⭐ ⬛ ⬜ ⛑ ⛰ ⛪ ⛲ ⛺ ⛽ ⛵ ⛴ ⛔ ⛅ ⛈ ⛱ ⛄ ⚽ ⚾️ ⛳ ⛸ ⛷ ⛹ ⛏ ⛓ ⛩ ⭕ ❗ 🅿️ ❦ ♕ ♛ ♔ ♖ ♜ ☾ → ⇒ ⟹ ⇨ ⇰ ➩ ➪ ➫ ➬ ➭ ➮ ➯ ➲ ➳ ➵ ➸ ➻ ➺ ➼ ➽ ☜ ☟ ➹ ➷ ↶ ↷ ✆ ⌘ ⎋ ⏎ ⏏ ⎈ ⎌ ⍟ ❥ ツ ღ ☻</p>
+<p>🌎 World Emoji Day is 📅 July 17, 2016.</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Math Demo]]></title>
+      <url>/Black-bird-demo/2017/07/05/Math-Demo/</url>
+      <content type="html"><![CDATA[<p><img src="http://www.clubhousenews.com/wp-content/uploads/2014/01/math.jpg" alt="post-cover"></p>
+<blockquote>
+<p>使用教程, 请参阅<a href="https://github.com/phoenixcw/hexo-renderer-mathjax" target="_blank" rel="external">该文档</a>和<a href="https://www.mathjax.org/" target="_blank" rel="external">mathjax官网</a></p>
+</blockquote>
+<p>$$<br>\frac{\partial u}{\partial t}<br>= h^2 \left( \frac{\partial^2 u}{\partial x^2} +<br>\frac{\partial^2 u}{\partial y^2} +<br>\frac{\partial^2 u}{\partial z^2}\right)<br>$$</p>
+<p>$$\cos 2\theta = \cos^2 \theta - \sin^2 \theta =  2 \cos^2 \theta - 1$$</p>
+<p>\[<br>    A^T_S = B<br>\]</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Images]]></title>
       <url>/Black-bird-demo/2013/12/26/images/</url>
       <content type="html"><![CDATA[<p>This is a image test post.</p>
-<p><img src="/assets/wallpaper-2572384.jpg" alt=""></p>
-<p><img src="/assets/wallpaper-2311325.jpg" alt="Caption"></p>
-<p><img src="/assets/wallpaper-878514.jpg" alt=""></p>
+<p><img src="https://williamjepma.files.wordpress.com/2013/09/127_hours1.jpg" alt="Caption"></p>
+<blockquote>
+<p>图片来自电影《127小时》</p>
+</blockquote>
+<p><img src="https://interactiondesign.files.wordpress.com/2012/03/monolith-sun.jpg" alt=""></p>
+<blockquote>
+<p>图片来自电影《2001太空漫游》</p>
+</blockquote>
+<p><img src="https://nypdecider.files.wordpress.com/2014/10/searching-for-sugar-man1.png?w=646&amp;h=335&amp;crop=1" alt=""></p>
+<blockquote>
+<p>图片来自纪录片《寻找小糖人》</p>
+</blockquote>
 <p><img src="http://placehold.it/350x150.jpg" alt="Small Picture"></p>
 ]]></content>
       
@@ -152,6 +230,22 @@
 <p><em>From <a href="http://lipsum.sugutsukaeru.jp/index.cgi" target="_blank" rel="external">すぐ使えるダミーテキスト - 日本語 Lorem ipsum</a></em></p>
 ]]></content>
       
+        <categories>
+            
+            <category> excerpts </category>
+            
+            <category> excepts2 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> excerpts </tag>
+            
+            <tag> excerpts2 </tag>
+            
+        </tags>
         
     </entry>
     
@@ -184,7 +278,8 @@
     <entry>
       <title><![CDATA[Categories]]></title>
       <url>/Black-bird-demo/2013/12/24/categories/</url>
-      <content type="html"><![CDATA[<p>This post contains 3 categories. Make sure your theme can display all of the categories.</p>
+      <content type="html"><![CDATA[<p><img src="http://8-themes.com/wp-content/uploads/2015/12/World___USA_St._Mary_Lake_in_Montana__USA_101449_-1920x1080.jpg" alt=""></p>
+<p>This post contains 3 categories. Make sure your theme can display all of the categories.</p>
 ]]></content>
       
         <categories>
@@ -327,16 +422,22 @@
     </entry>
     
     <entry>
+      <title><![CDATA[Page]]></title>
+      <url>/Black-bird-demo/page/index.html</url>
+      <content type="html"><![CDATA[<p>This is a page test.</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[tags]]></title>
       <url>/Black-bird-demo/tags/index.html</url>
       <content type="html"></content>
     </entry>
     
     <entry>
-      <title><![CDATA[Page]]></title>
-      <url>/Black-bird-demo/page/index.html</url>
-      <content type="html"><![CDATA[<p>This is a page test.</p>
-]]></content>
+      <title><![CDATA[My Works]]></title>
+      <url>/Black-bird-demo/works/index.html</url>
+      <content type="html"></content>
     </entry>
     
   

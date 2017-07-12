@@ -28,6 +28,7 @@
     justify-content: center;
 }
 
+/*水平居中*/
 .justify-center {
     justify-content: center;
 }
@@ -40,6 +41,7 @@
     justify-content: space-around;
 }
 
+/*垂直居中*/
 .align-center {
     align-items: center;
 }
@@ -119,10 +121,10 @@
     border-bottom: 1px solid #f1f1f1;
 }
 .top-line {
-    border-top: 1px solid #f1f1f1;
+    border-top: 2px solid #f1f1f1;
 }
 .right-line {
-    border-right: 1px solid #f1f1f1;
+    border-right: 2px solid #f1f1f1;
 }
 
 .content-inner {
@@ -166,15 +168,19 @@
 }
 
 /*!*index page*!*/
-/*#main-wrap:after {*/
-    /*content: '';*/
-    /*display: block;*/
+#main-wrap.add-mask:after {
+    content: '';
+    display: block;
 
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*height: 100%;*/
-    /*width: 100%;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 
-    /*background-color: rgba(0,0,0, .6);*/
-/*}*/
+    background-color: rgba(0,0,0, .15);
+}
+
+.blur {
+    filter: blur(10px);
+}

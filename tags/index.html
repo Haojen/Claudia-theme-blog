@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="full-height">
 <head>
-  <meta charset="utf-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   <link rel="stylesheet" href="//cdn.bootcss.com/bulma/0.4.1/css/bulma.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
@@ -25,48 +25,74 @@
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
   <link rel="stylesheet" href="/Black-bird-demo/css/common.css">
-  <link rel="stylesheet" href="/Black-bird-demo/css/nav.css">
+<link rel="stylesheet" href="/Black-bird-demo/css/nav.css">
+<link rel="stylesheet" href="/Black-bird-demo/css/layout.css"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 </head>
 
 <body>
-  <header id="navbar" class="overflow-hidden">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><header id="navbar" class="overflow-hidden">
   <div class="container">
-    <nav class="nav" style="background-color: rgba(255,255,255,0.88);">
-      <div class="nav-left">
-        <a href="/Black-bird-demo/" class="nav-item" style="font-size: 20px;">
-          <span class="logo">Haojen Ma</span>'s Blog
-        </a>
-      </div>
-      <span class="nav-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </span>
-      <div class="nav-center is-hidden" id="search_container">
-          <div class="nav-item full-width full-height">
-              <i class="fa fa-search has-padding" aria-hidden="true"></i>
-              <input type="text" class="search-input full-height full-width" placeholder="Search post" autofocus>
-              <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
-          </div>
-      </div>
-      <div class="nav-right nav-menu">
-        
-          <a class="nav-item" href="/Black-bird-demo/">
-            Home
-          </a>
-        
-        <a class="nav-item" id="search">
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </a>
-      </div>
+    <nav class="nav">
+         <div class="nav-left">
+            <a href="/Black-bird-demo/" class="nav-item" style="font-size: 20px;">
+              <span class="logo">Diskobólos</span>'s Blog
+            </a>
+         </div>
+        <div class="nav-center is-hidden position-relative" id="search_container">
+            <div class="nav-item full-width full-height">
+                <i class="fa fa-search has-padding" aria-hidden="true"></i>
+                <input type="text" id="search_input" class="search-input full-height full-width" placeholder="Search post" autofocus>
+                <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div id="search_result"></div>
+        </div>
+        <div class="nav-right nav-menu">
+            <a class="nav-item" id="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+            
+            <a class="nav-item" href="/Black-bird-demo/">
+                Home
+            </a>
+            
+            <a class="nav-item" href="/Black-bird-demo/works">
+                My Works
+            </a>
+            
+            <a class="nav-item" href="/Black-bird-demo/about">
+                About
+            </a>
+            
+        </div>
+        <span class="nav-toggle" id="navMenuDropdown">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        <div class="navbar-menu position-absolute full-width content-box is-hidden-desktop is-flex flex-column center" style="top: 100%;">
+            
+            <a class="nav-item flex-1" href="/Black-bird-demo/">
+                Home
+            </a>
+            
+            <a class="nav-item flex-1" href="/Black-bird-demo/works">
+                My Works
+            </a>
+            
+            <a class="nav-item flex-1" href="/Black-bird-demo/about">
+                About
+            </a>
+            
+        </div>
     </nav>
   </div>
 </header>
 
   <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
-      <style>
+      <div class="main-inner-content">
+          <style>
     .categories-title {
         margin-top: 85px;
     }
@@ -126,7 +152,7 @@
     </div>
     <div class="categories-inner is-flex center">
         
-            <a class="tag-link" href="/Black-bird-demo/tags/Bar/">Bar<span class="tag-count">1</span></a><a class="tag-link" href="/Black-bird-demo/tags/Baz/">Baz<span class="tag-count">1</span></a><a class="tag-link" href="/Black-bird-demo/tags/Foo/">Foo<span class="tag-count">1</span></a><a class="tag-link" href="/Black-bird-demo/tags/element-tag/">element tag<span class="tag-count">1</span></a><a class="tag-link" href="/Black-bird-demo/tags/excerpts/">excerpts<span class="tag-count">1</span></a><a class="tag-link" href="/Black-bird-demo/tags/excerpts2/">excerpts2<span class="tag-count">1</span></a>
+            <a class="tag-link" href="/Black-bird-demo/tags/Bar/">Bar<span class="tag-count">1</span></a><a class="tag-link" href="/Black-bird-demo/tags/Baz/">Baz<span class="tag-count">1</span></a><a class="tag-link" href="/Black-bird-demo/tags/Foo/">Foo<span class="tag-count">1</span></a><a class="tag-link" href="/Black-bird-demo/tags/element-tag/">element tag<span class="tag-count">1</span></a><a class="tag-link" href="/Black-bird-demo/tags/excerpts/">excerpts<span class="tag-count">2</span></a><a class="tag-link" href="/Black-bird-demo/tags/excerpts2/">excerpts2<span class="tag-count">2</span></a>
         
     </div>
 </div>
@@ -139,6 +165,7 @@
     //        item.classList.add('debug')
     //    })
 </script>
+      </div>
   </div>
   <style>
   #footer {
@@ -155,25 +182,34 @@
   <div class="container has-padding">
     <div>
       <div>
+        <!--请您保留作者署名, 主题制作来之不易-->
         Theme by <a href="http://haojen.github.io/">Haojen Ma</a>
         <br>
         Copyright © Haojen Ma 2017
         <br>
-        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
       </div>
     </div>
-    
-
-<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>-->
-
-
-  <link rel="stylesheet" href="/Black-bird-demo/fancybox/jquery.fancybox.css">
-  <script src="/Black-bird-demo/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/Black-bird-demo/js/script.js"></script>
-
   </div>
 </footer>
+
+<script src="/Black-bird-demo/js/search_core.js"></script>
+<script src="/Black-bird-demo/js/script.js"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>

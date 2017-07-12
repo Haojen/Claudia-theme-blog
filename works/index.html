@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html class="full-height">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+  <link rel="stylesheet" href="//cdn.bootcss.com/bulma/0.4.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  
+  <title>My Works | Haojen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="My Works">
+<meta property="og:url" content="https://haojen.github.io/Black-bird-demo/works/index.html">
+<meta property="og:site_name" content="Haojen">
+<meta property="og:updated_time" content="2017-07-06T10:31:09.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="My Works">
+  
+    <link rel="alternate" href="/atom.xml" title="Haojen" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/Black-bird-demo/css/common.css">
+<link rel="stylesheet" href="/Black-bird-demo/css/nav.css">
+<link rel="stylesheet" href="/Black-bird-demo/css/layout.css"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+</head>
+
+<body>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><header id="navbar" class="overflow-hidden">
+  <div class="container">
+    <nav class="nav">
+         <div class="nav-left">
+            <a href="/Black-bird-demo/" class="nav-item" style="font-size: 20px;">
+              <span class="logo">Diskobólos</span>'s Blog
+            </a>
+         </div>
+        <div class="nav-center is-hidden position-relative" id="search_container">
+            <div class="nav-item full-width full-height">
+                <i class="fa fa-search has-padding" aria-hidden="true"></i>
+                <input type="text" id="search_input" class="search-input full-height full-width" placeholder="Search post" autofocus>
+                <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div id="search_result"></div>
+        </div>
+        <div class="nav-right nav-menu">
+            <a class="nav-item" id="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+            
+            <a class="nav-item" href="/Black-bird-demo/">
+                Home
+            </a>
+            
+            <a class="nav-item" href="/Black-bird-demo/works">
+                My Works
+            </a>
+            
+            <a class="nav-item" href="/Black-bird-demo/about">
+                About
+            </a>
+            
+        </div>
+        <span class="nav-toggle" id="navMenuDropdown">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        <div class="navbar-menu position-absolute full-width content-box is-hidden-desktop is-flex flex-column center" style="top: 100%;">
+            
+            <a class="nav-item flex-1" href="/Black-bird-demo/">
+                Home
+            </a>
+            
+            <a class="nav-item flex-1" href="/Black-bird-demo/works">
+                My Works
+            </a>
+            
+            <a class="nav-item flex-1" href="/Black-bird-demo/about">
+                About
+            </a>
+            
+        </div>
+    </nav>
+  </div>
+</header>
+
+  <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
+      <div class="main-inner-content">
+          <style>
+
+    header .bg-header {
+        height: 560px;
+        /*background-color: #62A4FF;*/
+        background-image: -webkit-linear-gradient(top, #54D3DD, #9778F9)
+    }
+
+    /*头像*/
+    .bg-header .avatar img {
+        border-radius: 50%;
+        margin-top: 100px;
+        max-width: 170px;
+    }
+
+    .bg-header h1,
+    .bg-header h2 {
+        color: white;
+    }
+
+    /*姓名*/
+    .bg-header h1 {
+        letter-spacing: 2px;
+        text-shadow: 0 0 10px rgba(15, 15, 15, .3);
+    }
+
+    /*描述*/
+    .bg-header h2 {
+        font-size: 18px;
+        margin-top: 12px;
+    }
+
+    /*整个作品展示区*/
+    .works-area {
+        margin-top: -175px;
+    }
+
+    .works-area .works-item {
+        width: 80%;
+        max-width: 1200px;
+
+        border-radius: 2px;
+        border: 1px solid #eee8d5;
+        margin: 25px auto;
+        box-shadow: 8px 5px 10px rgba(0, 0, 0, .2);
+    }
+
+    .works-item-img {
+        margin: auto -26px;
+    }
+
+    .works-item-img img {
+        width: 100%;
+    }
+
+    .works-area .works-item {
+        background: white;
+        padding: 0 25px 15px;
+    }
+
+    .works-item .works-content {
+        padding-top: 15px;
+    }
+
+    .works-item .title {
+        height: 50px;
+        margin: 0;
+    }
+
+    .works-item .title{
+        font-size: 18px;
+    }
+
+    .works-item .use span {
+        display: inline-block;
+        font-size: 12px;
+        border-radius: 3px;
+        padding: 0 4px;
+        border: thin solid #795548;
+    }
+
+    .works-item .subtitle {
+        margin: 0;
+        font-size: 17px;
+    }
+</style>
+
+<div class="works-container" style="background-color: #fafafa">
+    <header>
+        <div class="bg-header is-flex justify-center">
+            <div class="profile">
+                <div class="avatar">
+                    <img src="https://cdn2.iconfinder.com/data/icons/rcons-user/32/male-shadow-circle-512.png">
+                </div>
+                <div class="personal-profile has-text-centered content">
+                    <h1>
+                        Diskobólos
+                    </h1>
+                    <h2>-- 个人作品集 --</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container works-area">
+        
+            <div class="works-item">
+                <div class="title is-flex center justify-space-between ">
+                    <span>
+                        <strong>Apple 官网临摹</strong>
+                    </span>
+                    <span class="title-date tag is-dark">
+                        2016.3
+                    </span>
+                </div>
+                <div class="works-item-img">
+                    <img src="http://o7bkkhiex.bkt.clouddn.com/item-apple.jpg">
+                </div>
+                <div class="works-content">
+                    <div class="use text-warning">
+                        
+                        <span>
+                                jQuery
+                            </span>
+                        
+                    </div>
+                    　
+                    <p class="subtitle"> 根据美版apple官网临摹 </p>
+
+                    <p class="text-muted"> 临摹 2016 年三月份 Apple 美版单页面, 临摹的主要目的是练习响应式页面,兼容 Firefox、Chrome、Edge。使用了 HTML5 的 flex 布局,未在IE上测试,实际上作品页面结构比较凌乱,前期也未作好规划,现在看来有很多的不足和改善空间。 </p>
+                </div>
+                <div class="is-flex" style="margin-top: 30px;">
+                    <a class="button is-info" href="http://haojen.github.io/apple-linmo/" target="_blank">
+                        Open it
+                    </a>
+                </div>
+
+            </div>
+        
+            <div class="works-item">
+                <div class="title is-flex center justify-space-between ">
+                    <span>
+                        <strong>萤火虫之诗</strong>
+                    </span>
+                    <span class="title-date tag is-dark">
+                        2016.4
+                    </span>
+                </div>
+                <div class="works-item-img">
+                    <img src="http://o7bkkhiex.bkt.clouddn.com/copy_item-firefly.jpg">
+                </div>
+                <div class="works-content">
+                    <div class="use text-warning">
+                        
+                        <span>
+                                jQuery
+                            </span>
+                        
+                        <span>
+                                Bootstrap
+                            </span>
+                        
+                    </div>
+                    　
+                    <p class="subtitle"> A Poetry Single Site </p>
+
+                    <p class="text-muted"> 一个简单的单页面古诗展示网站,难点是用 JavaScript 实现粒子的随机布朗运动, 打开时建议关掉其它声音,页面有我个人剪辑好的音效。页面快捷键: 「C」切换主题,「M」页面静音(音频和主题切换的状态是用 cookie 实现的) </p>
+                </div>
+                <div class="is-flex" style="margin-top: 30px;">
+                    <a class="button is-info" href="http://haojen.github.io/fire-fly/" target="_blank">
+                        Open it
+                    </a>
+                </div>
+
+            </div>
+        
+            <div class="works-item">
+                <div class="title is-flex center justify-space-between ">
+                    <span>
+                        <strong>Anisina</strong>
+                    </span>
+                    <span class="title-date tag is-dark">
+                        2016.5
+                    </span>
+                </div>
+                <div class="works-item-img">
+                    <img src="http://o7bkkhiex.bkt.clouddn.com/Anisina.png">
+                </div>
+                <div class="works-content">
+                    <div class="use text-warning">
+                        
+                        <span>
+                                jQuery
+                            </span>
+                        
+                        <span>
+                                Bootstrap
+                            </span>
+                        
+                        <span>
+                                Node.js
+                            </span>
+                        
+                        <span>
+                                EJS
+                            </span>
+                        
+                        <span>
+                                Hexo
+                            </span>
+                        
+                        <span>
+                                SASS
+                            </span>
+                        
+                    </div>
+                    　
+                    <p class="subtitle"> 基于 Hexo 制作的个人博客主题, 支持七牛图床资源 CDN ,支持微信分享 Title 图标的自定义 </p>
+
+                    <p class="text-muted"> Hexo 是某位台湾友人基于 Node.js 编写的博客框架，目前已在 <a class='text-info' href='https://hexo.io/themes/'>Hexo 官网</a> 上架，你也可以进入我的 Github 查看<a class='text-info' href=' https://github.com/Haojen/hexo-theme-Anisina'>项目源码</a> </p>
+                </div>
+                <div class="is-flex" style="margin-top: 30px;">
+                    <a class="button is-info" href="http://haojen.github.io/" target="_blank">
+                        Open it
+                    </a>
+                </div>
+
+            </div>
+        
+            <div class="works-item">
+                <div class="title is-flex center justify-space-between ">
+                    <span>
+                        <strong>浏览器使用调查</strong>
+                    </span>
+                    <span class="title-date tag is-dark">
+                        2016.6.29
+                    </span>
+                </div>
+                <div class="works-item-img">
+                    <img src="http://o7bkkhiex.bkt.clouddn.com/browser-survey.png">
+                </div>
+                <div class="works-content">
+                    <div class="use text-warning">
+                        
+                        <span>
+                                Node.JS
+                            </span>
+                        
+                        <span>
+                                Epxress
+                            </span>
+                        
+                        <span>
+                                MongoDB
+                            </span>
+                        
+                        <span>
+                                Mongoose
+                            </span>
+                        
+                        <span>
+                                jQuery
+                            </span>
+                        
+                        <span>
+                                Bootstrap
+                            </span>
+                        
+                        <span>
+                                jQuery-plugs
+                            </span>
+                        
+                    </div>
+                    　
+                    <p class="subtitle"> 调查哪款浏览器人们用的最多 </p>
+
+                    <p class="text-muted"> 部属在新浪 SAE 引擎上 Nodejs项目 ，数据库用的是国外的 mLab ，所以在即时的数据显示上国内有些慢，项目的难点在于熟悉和适应 Node.js 的异步特性，和避免回调金字塔(callbck hell),进入后台管理的帐号是：admin , 密码： 111 ， 还望请勿随意改动密码 :) </p>
+                </div>
+                <div class="is-flex" style="margin-top: 30px;">
+                    <a class="button is-info" href="http://1.haojen.applinzi.com/result" target="_blank">
+                        Open it
+                    </a>
+                </div>
+
+            </div>
+        
+    </div>
+</div>
+      </div>
+  </div>
+  <style>
+  #footer {
+    min-height: 10vh;
+    background: black;
+    color: #fff;
+  }
+
+  #footer a {
+    color: #e1e1e1;
+  }
+</style>
+<footer id="footer" class="has-text-centered is-flex center">
+  <div class="container has-padding">
+    <div>
+      <div>
+        <!--请您保留作者署名, 主题制作来之不易-->
+        Theme by <a href="http://haojen.github.io/">Haojen Ma</a>
+        <br>
+        Copyright © Haojen Ma 2017
+        <br>
+        Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/Black-bird-demo/js/search_core.js"></script>
+<script src="/Black-bird-demo/js/script.js"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
+</html>

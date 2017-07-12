@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="full-height">
 <head>
-  <meta charset="utf-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   <link rel="stylesheet" href="//cdn.bootcss.com/bulma/0.4.1/css/bulma.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
@@ -24,223 +24,414 @@
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
   <link rel="stylesheet" href="/Black-bird-demo/css/common.css">
-  <link rel="stylesheet" href="/Black-bird-demo/css/nav.css">
+<link rel="stylesheet" href="/Black-bird-demo/css/nav.css">
+<link rel="stylesheet" href="/Black-bird-demo/css/layout.css"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 </head>
 
 <body>
-  <header id="navbar" class="overflow-hidden">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><header id="navbar" class="overflow-hidden">
   <div class="container">
-    <nav class="nav" style="background-color: rgba(255,255,255,0.88);">
-      <div class="nav-left">
-        <a href="/Black-bird-demo/" class="nav-item" style="font-size: 20px;">
-          <span class="logo">Haojen Ma</span>'s Blog
-        </a>
-      </div>
-      <span class="nav-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </span>
-      <div class="nav-center is-hidden" id="search_container">
-          <div class="nav-item full-width full-height">
-              <i class="fa fa-search has-padding" aria-hidden="true"></i>
-              <input type="text" class="search-input full-height full-width" placeholder="Search post" autofocus>
-              <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
-          </div>
-      </div>
-      <div class="nav-right nav-menu">
-        
-          <a class="nav-item" href="/Black-bird-demo/">
-            Home
-          </a>
-        
-        <a class="nav-item" id="search">
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </a>
-      </div>
+    <nav class="nav">
+         <div class="nav-left">
+            <a href="/Black-bird-demo/" class="nav-item" style="font-size: 20px;">
+              <span class="logo">Diskobólos</span>'s Blog
+            </a>
+         </div>
+        <div class="nav-center is-hidden position-relative" id="search_container">
+            <div class="nav-item full-width full-height">
+                <i class="fa fa-search has-padding" aria-hidden="true"></i>
+                <input type="text" id="search_input" class="search-input full-height full-width" placeholder="Search post" autofocus>
+                <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div id="search_result"></div>
+        </div>
+        <div class="nav-right nav-menu">
+            <a class="nav-item" id="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+            
+            <a class="nav-item" href="/Black-bird-demo/">
+                Home
+            </a>
+            
+            <a class="nav-item" href="/Black-bird-demo/works">
+                My Works
+            </a>
+            
+            <a class="nav-item" href="/Black-bird-demo/about">
+                About
+            </a>
+            
+        </div>
+        <span class="nav-toggle" id="navMenuDropdown">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        <div class="navbar-menu position-absolute full-width content-box is-hidden-desktop is-flex flex-column center" style="top: 100%;">
+            
+            <a class="nav-item flex-1" href="/Black-bird-demo/">
+                Home
+            </a>
+            
+            <a class="nav-item flex-1" href="/Black-bird-demo/works">
+                My Works
+            </a>
+            
+            <a class="nav-item flex-1" href="/Black-bird-demo/about">
+                About
+            </a>
+            
+        </div>
     </nav>
   </div>
 </header>
 
   <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
-      <style>
+      <div class="main-inner-content">
+          <style>
     .post-hover:hover {
         box-shadow: inset 0 0 100px #000;
         transition: box-shadow .2s;
     }
 
-    .post-hover:hover h3 {
+    .sub-post-container .post-hover:hover h3 {
         text-decoration: underline gray;
     }
 
-    .primary-post-container{
-        height: 377px;
-        margin-bottom: 15px;
+
+    .primary-item-main {
+        height: 330px;
+        background-size: cover;
     }
 
-    .primary-post-container .title {
+    .primary-container .title,
+    .primary-container .sub-title,
+    .primary-container .post-content-text,
+    .primary-container .date {
         color: #fff;
-    }
-
-    .primary-post-container .sub-title {
-        color: #fff;
-    }
-    .primary-post-container .date {
-        color: #f1f1f1;
     }
 
     .post-content-text {
-        color: #fff;
+        color: #f1f1f1!important;
     }
 
-    .primary-item-main,
-    .primary-item-sub {
-        background-color: #636363;
+    .primary-container .post-hover {
+        background: black;
     }
 
-    .primary-item-main {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        background-size: cover;
+    .content-bg-mask {
+        background: rgba(0,0,0,.4);
     }
 
-    .primary-item-main > div {
-        height: 140px;
-    }
-
-    .primary-item-sub {
-        display: flex;
-        align-items: center;
-        height: 48.6%;
-        background-size: cover;
-    }
-
-    .primary-item-sub > div {
-        height: 100px;
-        display: flex;
-        align-items: center;
-
-        padding-left: 15px;
-    }
-
-    /*次要的 post 内容样式*/
-
-    .sub-post-container {
-        height: 234px;
-        display: flex;
-        margin-bottom: 15px;
-    }
-
-    .sub-post-container .post-content {
-        padding-left: 15px;
-        padding-right: 15px;
-        border-bottom: 1px solid #e1e1e1;
-    }
 </style>
 
 <div style="background: #f5f8f9;">
     <div id="main-container" class="container" style="padding-top: 20px;">
-        <div class="is-flex main-content">
+        <div class="is-flex main-content justify-center">
             <section class="column is-9">
                 
-<div class="primary-post-container is-flex content-box clear-padding">
-    <div class="column is-7">
-        <a href="/Black-bird-demo/2013/12/26/images/">
-            <div class="primary-item-main full-height post-hover"
-                 style="background-image: url('/assets/wallpaper-2572384.jpg')">
-                <div class="full-width">
-                    <div class="content has-text-centered">
-                        <h1 class="title text-shadow is-marginless">Images</h1>
+<div class="primary-container content-box is-flex-desktop clear-padding bottom-line" style="margin-bottom: 25px;">
+    <div class="column  is-7-desktop">
+        <a href="/Black-bird-demo/2017/07/09/Flowchart-Demo/">
+            <div class="full-height post-hover"
+                 style="background-image: url('http://www.success.com/sites/default/files/main/blogposts/secretsofthemindhighlysuccessfulpeopleknowthatyoudont.jpg'); min-height: 350px">
+                    <div class=" is-flex flex-column center content has-text-centered full-height has-padding content-bg-mask">
+                        <h1 class="title text-shadow" style="margin-bottom: 15px;">
+                            Flowchart Demo
+                        </h1>
+                        <div>
                         
                             
                         
-                        <p class="sub-title text-shadow"></p>
-                        <p class="post-content-text is-marginless text-shadow">
-                            This is a image test post.
+                        </div>
+                        <p class="post-content-text is-marginless has-padding text-shadow">
+                            
+
+使用教程请参阅这篇文档
 
 
-
-
-
+st=>start: Start|past:>http://www.google.com[blank]
+e=>end: End:>http://www.google.com
+op1=>operation:..
                         </p>
-                        <p class="date text-shadow">2013-12-26</p>
-                        <button class="button is-info is-small is-outlined2">Read More</button>
+                        <p class="date text-shadow">2017-07-09</p>
+                        <button class="button is-info is-small">Read More</button>
                     </div>
-                </div>
             </div>
         </a>
     </div>
-    <div class="column is-5" style="padding-left: 0;">
-        <div class="full-height is-flex flex-column justify-space-between">
+    <div class="column is-5 is-hidden-touch" style="padding-left: 0;">
+        <div class="full-height is-flex flex-column justify-space-between" style="min-height: 350px;">
             
-                <div class="primary-item-sub"
-                     style="background-image: url('')" >
-                    <a class="post-hover full-width full-height has-padding" href="/Black-bird-demo/2013/12/25/no-title/">
-                        <div class="content">
-                            <h3 class="title is-marginless text-shadow">Null</h3>
-                            
-                                
-                            
-                            <p class="sub-title text-shadow"></p>
-                            <p class="post-content-text text-shadow is-marginless">
-                                This post doesn’t have a title. Make sure it’s accessible.
+                
+<a class="post-hover" href="/Black-bird-demo/2017/07/06/Emoji-Demo/" style="height: 48.5%">
+    <div class="content is-hidden-touch full-height overflow-hidden" style="background-image: url('https://blogdeshark.files.wordpress.com/2014/10/pia14293_achicado_nasa.jpg')">
+        <div class="content-bg-mask full-width full-height has-padding">
+            <h3 class="title is-marginless text-shadow">
+                Emoji-Demo
+            </h3>
+            
+            
+            
+            <p class="sub-title text-shadow"></p>
+            <p class="is-marginless text-shadow post-content-text">
+                
+使用方法:比如你想发一个笑脸 直接输入笑脸对应的 emmoji 编码 &lt;img clas..
+            </p>
+            <p class="date text-shadow is-marginless">2017-07-06</p>
+        </div>
+    </div>
+</a>
+            
+            
+                
+<a class="post-hover" href="/Black-bird-demo/2017/07/05/Math-Demo/" style="height: 48.5%">
+    <div class="content is-hidden-touch full-height overflow-hidden" style="background-image: url('http://www.clubhousenews.com/wp-content/uploads/2014/01/math.jpg')">
+        <div class="content-bg-mask full-width full-height has-padding">
+            <h3 class="title is-marginless text-shadow">
+                Math Demo
+            </h3>
+            
+            
+            
+            <p class="sub-title text-shadow"></p>
+            <p class="is-marginless text-shadow post-content-text">
+                
 
-                            </p>
-                            <p class="date text-shadow clear-padding is-marginless">2013-12-25</p>
-                        </div>
-                    </a>
-                </div>
-            
-            
-                <div class="primary-item-sub"
-                     style="background-image: url('')" >
-                    <a class="post-hover full-width full-height has-padding" href="/Black-bird-demo/2013/12/25/excerpts/">
-                        <div class="content">
-                            <h3 class="title is-marginless text-shadow">
-                                Excerpts
-                            </h3>
-                            
-                                
-                                    <span class="tag is-post-tag">excerpts</span>
-                                
-                                    <span class="tag is-post-tag">excerpts2</span>
-                                
-                            
-                            <p class="sub-title text-shadow"></p>
-                            <p class="is-marginless text-shadow post-content-text">
-                                The following contents should be invisible in home/archive page.
+使用教程, 请参阅该文档和mathjax官网
 
-Lorem ipsum ..
-                            </p>
-                            <p class="date text-shadow is-marginless">2013-12-25</p>
-                        </div>
-                    </a>
-                </div>
+$$\frac{\partial u}{\p..
+            </p>
+            <p class="date text-shadow is-marginless">2017-07-05</p>
+        </div>
+    </div>
+</a>
             
         </div>
     </div>
+    <div class="column is-12 is-hidden-desktop">
+        
+        
+<a class="post-hover" href="/Black-bird-demo/2017/07/06/Emoji-Demo/" style="height: 48.5%">
+    <div class="content is-hidden-touch full-height overflow-hidden" style="background-image: url('https://blogdeshark.files.wordpress.com/2014/10/pia14293_achicado_nasa.jpg')">
+        <div class="content-bg-mask full-width full-height has-padding">
+            <h3 class="title is-marginless text-shadow">
+                Emoji-Demo
+            </h3>
+            
+            
+            
+            <p class="sub-title text-shadow"></p>
+            <p class="is-marginless text-shadow post-content-text">
+                
+使用方法:比如你想发一个笑脸 直接输入笑脸对应的 emmoji 编码 &lt;img clas..
+            </p>
+            <p class="date text-shadow is-marginless">2017-07-06</p>
+        </div>
+    </div>
+</a>
+        
+        
+        
+<a class="post-hover" href="/Black-bird-demo/2017/07/05/Math-Demo/" style="height: 48.5%">
+    <div class="content is-hidden-touch full-height overflow-hidden" style="background-image: url('http://www.clubhousenews.com/wp-content/uploads/2014/01/math.jpg')">
+        <div class="content-bg-mask full-width full-height has-padding">
+            <h3 class="title is-marginless text-shadow">
+                Math Demo
+            </h3>
+            
+            
+            
+            <p class="sub-title text-shadow"></p>
+            <p class="is-marginless text-shadow post-content-text">
+                
+
+使用教程, 请参阅该文档和mathjax官网
+
+$$\frac{\partial u}{\p..
+            </p>
+            <p class="date text-shadow is-marginless">2017-07-05</p>
+        </div>
+    </div>
+</a>
+        
+    </div>
 </div>
 
-                
                     
                     
                 
                     
-                
-                    
-                
-                    
-                        <a class="post-hover" href="/Black-bird-demo/2013/12/25/videos/">
-                            <div class="sub-post-container is-flex content-box clear-padding">
+                        <div class="content-box  is-hidden-desktop" style="margin-bottom: 27px;">
+                            <a class="post-hover" href="/Black-bird-demo/2017/07/06/Emoji-Demo/">
+                            <div class="columns" style="min-height: 230px;">
                                 
-                                    <div class="flex-1 post-avatar"
-                                         style="margin: 12px;background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495839619058&di=a317521990c38c55d05f28f575d30d54&imgtype=0&src=http%3A%2F%2Fcms-bucket.nosdn.127.net%2Fcatchpic%2F2%2F2a%2F2aaf2e2b48f5df317e71f648fccd44fa.jpg%3FimageView%26thumbnail%3D550x0')" >
+                                    <div class="column is-4-desktop is-5-tablet post-avatar is-hidden-mobile"
+                                         style="margin: 10px; background-size: cover;background-image: url('https://blogdeshark.files.wordpress.com/2014/10/pia14293_achicado_nasa.jpg')">
                                     </div>
                                 
-                                <div class="flex-2 post-content is-flex align-center">
+                                <div class="column is-8-desktop post-content is-flex align-center">
+                                    <div class="content">
+                                        <h3>Emoji-Demo</h3>
+                                        
+                                        <p>
+                                            
+                                        </p>
+                                        <p>
+                                            
+使用方法:比如你想发一个笑脸 直接输入笑脸对应的 emmoji 编码 &lt;img class=&quot;github-emoji&quot;  title=&quot;smile&quot; alt=&quot;smile&quot; src=&quot;https://assets-cdn.github.com/images/icons/emo..
+                                        </p>
+                                        <p>2017-07-06</p>
+                                        <button class="button is-small">Read More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    
+                
+                    
+                        <div class="content-box  is-hidden-desktop" style="margin-bottom: 27px;">
+                            <a class="post-hover" href="/Black-bird-demo/2017/07/05/Math-Demo/">
+                            <div class="columns" style="min-height: 230px;">
+                                
+                                    <div class="column is-4-desktop is-5-tablet post-avatar is-hidden-mobile"
+                                         style="margin: 10px; background-size: cover;background-image: url('http://www.clubhousenews.com/wp-content/uploads/2014/01/math.jpg')">
+                                    </div>
+                                
+                                <div class="column is-8-desktop post-content is-flex align-center">
+                                    <div class="content">
+                                        <h3>Math Demo</h3>
+                                        
+                                        <p>
+                                            
+                                        </p>
+                                        <p>
+                                            
+
+使用教程, 请参阅该文档和mathjax官网
+
+$$\frac{\partial u}{\partial t}= h^2 \left( \frac{\partial^2 u}{\partial x^2} +\frac{\partial^2 u}{\partial y^2} +\frac{\partial^2 u}{\partial z^2}\righ..
+                                        </p>
+                                        <p>2017-07-05</p>
+                                        <button class="button is-small">Read More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    
+                
+                    
+                        <div class="content-box  " style="margin-bottom: 27px;">
+                            <a class="post-hover" href="/Black-bird-demo/2013/12/26/images/">
+                            <div class="columns" style="min-height: 230px;">
+                                
+                                    <div class="column is-4-desktop is-5-tablet post-avatar is-hidden-mobile"
+                                         style="margin: 10px; background-size: cover;background-image: url('https://williamjepma.files.wordpress.com/2013/09/127_hours1.jpg')">
+                                    </div>
+                                
+                                <div class="column is-8-desktop post-content is-flex align-center">
+                                    <div class="content">
+                                        <h3>Images</h3>
+                                        
+                                        <p>
+                                            
+                                        </p>
+                                        <p>
+                                            This is a image test post.
+
+
+图片来自电影《127小时》
+
+
+
+图片来自电影《2001太空漫游》
+
+
+
+图片来自纪录片《寻找小糖人》
+
+
+
+                                        </p>
+                                        <p>2013-12-26</p>
+                                        <button class="button is-small">Read More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    
+                
+                    
+                        <div class="content-box  " style="margin-bottom: 27px;">
+                            <a class="post-hover" href="/Black-bird-demo/2013/12/25/no-title/">
+                            <div class="columns" style="min-height: 230px;">
+                                
+                                <div class="column is-8-desktop post-content is-flex align-center">
+                                    <div class="content">
+                                        <h3>Null</h3>
+                                        
+                                        <p>
+                                            
+                                        </p>
+                                        <p>
+                                            This post doesn’t have a title. Make sure it’s accessible.
+
+                                        </p>
+                                        <p>2013-12-25</p>
+                                        <button class="button is-small">Read More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    
+                
+                    
+                        <div class="content-box  " style="margin-bottom: 27px;">
+                            <a class="post-hover" href="/Black-bird-demo/2013/12/25/excerpts/">
+                            <div class="columns" style="min-height: 230px;">
+                                
+                                <div class="column is-8-desktop post-content is-flex align-center">
+                                    <div class="content">
+                                        <h3>Excerpts</h3>
+                                        
+                                        <p>
+                                            
+                                                <span class="tag is-post-tag">excerpts</span>
+                                            
+                                                <span class="tag is-post-tag">excerpts2</span>
+                                            
+                                        </p>
+                                        <p>
+                                            The following contents should be invisible in home/archive page.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna vitae velit eleifend interdum at ac nis..
+                                        </p>
+                                        <p>2013-12-25</p>
+                                        <button class="button is-small">Read More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    
+                
+                    
+                        <div class="content-box  " style="margin-bottom: 27px;">
+                            <a class="post-hover" href="/Black-bird-demo/2013/12/25/videos/">
+                            <div class="columns" style="min-height: 230px;">
+                                
+                                    <div class="column is-4-desktop is-5-tablet post-avatar is-hidden-mobile"
+                                         style="margin: 10px; background-size: cover;background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495839619058&di=a317521990c38c55d05f28f575d30d54&imgtype=0&src=http%3A%2F%2Fcms-bucket.nosdn.127.net%2Fcatchpic%2F2%2F2a%2F2aaf2e2b48f5df317e71f648fccd44fa.jpg%3FimageView%26thumbnail%3D550x0')">
+                                    </div>
+                                
+                                <div class="column is-8-desktop post-content is-flex align-center">
                                     <div class="content">
                                         <h3>Videos</h3>
                                         
@@ -256,18 +447,20 @@ Vimeo
 
                                         </p>
                                         <p>2013-12-25</p>
-                                        <button class="button is-small">阅读更多</button>
+                                        <button class="button is-small">Read More</button>
                                     </div>
                                 </div>
                             </div>
                         </a>
+                        </div>
                     
                 
                     
-                        <a class="post-hover" href="/Black-bird-demo/2013/12/25/gallery-post/">
-                            <div class="sub-post-container is-flex content-box clear-padding">
+                        <div class="content-box  " style="margin-bottom: 27px;">
+                            <a class="post-hover" href="/Black-bird-demo/2013/12/25/gallery-post/">
+                            <div class="columns" style="min-height: 230px;">
                                 
-                                <div class="flex-2 post-content is-flex align-center">
+                                <div class="column is-8-desktop post-content is-flex align-center">
                                     <div class="content">
                                         <h3>Gallery Post</h3>
                                         
@@ -287,18 +480,20 @@ From Wallbase.cc
 
                                         </p>
                                         <p>2013-12-25</p>
-                                        <button class="button is-small">阅读更多</button>
+                                        <button class="button is-small">Read More</button>
                                     </div>
                                 </div>
                             </div>
                         </a>
+                        </div>
                     
                 
                     
-                        <a class="post-hover" href="/Black-bird-demo/2013/12/25/tag-plugins/">
-                            <div class="sub-post-container is-flex content-box clear-padding">
+                        <div class="content-box  " style="margin-bottom: 27px;">
+                            <a class="post-hover" href="/Black-bird-demo/2013/12/25/tag-plugins/">
+                            <div class="columns" style="min-height: 230px;">
                                 
-                                <div class="flex-2 post-content is-flex align-center">
+                                <div class="column is-8-desktop post-content is-flex align-center">
                                     <div class="content">
                                         <h3>Tag Plugins</h3>
                                         
@@ -313,18 +508,20 @@ Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
 Quote from..
                                         </p>
                                         <p>2013-12-25</p>
-                                        <button class="button is-small">阅读更多</button>
+                                        <button class="button is-small">Read More</button>
                                     </div>
                                 </div>
                             </div>
                         </a>
+                        </div>
                     
                 
                     
-                        <a class="post-hover" href="/Black-bird-demo/2013/12/24/link-post-without-title/">
-                            <div class="sub-post-container is-flex content-box clear-padding">
+                        <div class="content-box  " style="margin-bottom: 27px;">
+                            <a class="post-hover" href="/Black-bird-demo/2013/12/24/link-post-without-title/">
+                            <div class="columns" style="min-height: 230px;">
                                 
-                                <div class="flex-2 post-content is-flex align-center">
+                                <div class="column is-8-desktop post-content is-flex align-center">
                                     <div class="content">
                                         <h3>www.google.com</h3>
                                         
@@ -336,87 +533,13 @@ Quote from..
 
                                         </p>
                                         <p>2013-12-24</p>
-                                        <button class="button is-small">阅读更多</button>
+                                        <button class="button is-small">Read More</button>
                                     </div>
                                 </div>
                             </div>
                         </a>
+                        </div>
                     
-                
-                    
-                        <a class="post-hover" href="/Black-bird-demo/2013/12/24/日本語テスト/">
-                            <div class="sub-post-container is-flex content-box clear-padding">
-                                
-                                <div class="flex-2 post-content is-flex align-center">
-                                    <div class="content">
-                                        <h3>日本語テスト</h3>
-                                        
-                                        <p>
-                                            
-                                        </p>
-                                        <p>
-                                            This is a Japanese test post.
-私は昨日ついにその助力家というのの上よりするたなけれ。
-最も今をお話団はちょうどこの前後なかろでくらいに困りがいるたをは帰着考えたなかって、そうにもするでうたらない。
-がたを知っないはずも同時に九月をいよいよたありた。
-もっと槙さんにぼんやり金少し説明にえた自分大した人私か影響にというお関係たう..
-                                        </p>
-                                        <p>2013-12-24</p>
-                                        <button class="button is-small">阅读更多</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    
-                
-                    
-                        <a class="post-hover" href="/Black-bird-demo/2013/12/24/中文测试/">
-                            <div class="sub-post-container is-flex content-box clear-padding">
-                                
-                                <div class="flex-2 post-content is-flex align-center">
-                                    <div class="content">
-                                        <h3>中文測試</h3>
-                                        
-                                        <p>
-                                            
-                                        </p>
-                                        <p>
-                                            This is a Chinese test post.
-善我王上魚、產生資西員合兒臉趣論。畫衣生這著爸毛親可時，安程幾？合學作。觀經而作建。都非子作這！法如言子你關！手師也。
-以也座論頭室業放。要車時地變此親不老高小是統習直麼調未，行年香一？
-就竟在，是我童示讓利分和異種百路關母信過明驗有個歷洋中前合著區亮風值新底車有正結，進快保的行戰從：弟除文辦條國..
-                                        </p>
-                                        <p>2013-12-24</p>
-                                        <button class="button is-small">阅读更多</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    
-                
-                    
-                        <a class="post-hover" href="/Black-bird-demo/2013/12/24/long-title/">
-                            <div class="sub-post-container is-flex content-box clear-padding">
-                                
-                                <div class="flex-2 post-content is-flex align-center">
-                                    <div class="content">
-                                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</h3>
-                                        
-                                        <p>
-                                            
-                                        </p>
-                                        <p>
-                                            This post has a long title. Make sure the title displayed right.
-
-                                        </p>
-                                        <p>2013-12-24</p>
-                                        <button class="button is-small">阅读更多</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    
-                
                 
                 <!--翻頁-->
                 <nav class="pagination is-flex" style="justify-content: flex-end">
@@ -488,14 +611,14 @@ Quote from..
         background-color: gray;
     }
 </style>
-<aside class="column is-3" style="max-width: 280px; min-width: 230px">
-    <div class="content-box user-info ">
+<aside class="column is-hidden-touch is-3" style="max-width: 280px; min-width: 230px">
+    <div class="content-box user-info">
         <div class="has-padding">
             <header class="has-text-centered">
                 <img class="avatar" src="https://cdn2.iconfinder.com/data/icons/rcons-user/32/male-shadow-circle-512.png">
             </header>
             <section class="has-text-centered">
-                <h3><strong>User Name</strong></h3>
+                <h3><strong>Diskobólos</strong></h3>
                 <p class="sub-title">Hello World</p>
                 
                 <p class="is-flex center" style=" color: gray">
@@ -563,7 +686,7 @@ Quote from..
         <!--post数量和tag category 数量-->
         <div class="site-box is-flex">
             <div class="flex-1 is-flex flex-column center full-height right-line">
-                <strong>15</strong>
+                <strong>18</strong>
                 <p>Posts</p>
             </div>
             <div class="flex-1 is-flex flex-column center full-height">
@@ -578,29 +701,29 @@ Quote from..
         </div>
         <div class="content-inner is-flex flex-wrap justify-space-between">
             
-            <a class="tags-item" href="#element tag" title="element tag" rel="1">
-                element tag
-            </a>
+                <a class="tags-item" href="tags/excerpts/" title="excerpts" rel="2">
+                    excerpts
+                </a>
             
-            <a class="tags-item" href="#excerpts" title="excerpts" rel="1">
-                excerpts
-            </a>
+                <a class="tags-item" href="tags/excerpts2/" title="excerpts2" rel="2">
+                    excerpts2
+                </a>
             
-            <a class="tags-item" href="#excerpts2" title="excerpts2" rel="1">
-                excerpts2
-            </a>
+                <a class="tags-item" href="tags/element-tag/" title="element tag" rel="1">
+                    element tag
+                </a>
             
-            <a class="tags-item" href="#Foo" title="Foo" rel="1">
-                Foo
-            </a>
+                <a class="tags-item" href="tags/Foo/" title="Foo" rel="1">
+                    Foo
+                </a>
             
-            <a class="tags-item" href="#Bar" title="Bar" rel="1">
-                Bar
-            </a>
+                <a class="tags-item" href="tags/Bar/" title="Bar" rel="1">
+                    Bar
+                </a>
             
-            <a class="tags-item" href="#Baz" title="Baz" rel="1">
-                Baz
-            </a>
+                <a class="tags-item" href="tags/Baz/" title="Baz" rel="1">
+                    Baz
+                </a>
             
         </div>
     </div>
@@ -609,7 +732,7 @@ Quote from..
             <strong>Categories</strong>
         </div>
         <div class="content-inner">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/Black-bird-demo/categories/Foo/">Foo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/Black-bird-demo/categories/Gallery/">Gallery</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/Black-bird-demo/categories/Tags/">Tags</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/Black-bird-demo/categories/elements/">elements</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/Black-bird-demo/categories/excerpts/">excerpts</a><span class="category-list-count">1</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/Black-bird-demo/categories/Foo/">Foo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/Black-bird-demo/categories/Gallery/">Gallery</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/Black-bird-demo/categories/Tags/">Tags</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/Black-bird-demo/categories/elements/">elements</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/Black-bird-demo/categories/excerpts/">excerpts</a><span class="category-list-count">2</span></li></ul>
         </div>
     </div>
     <div class="content-inner content-box">
@@ -617,7 +740,7 @@ Quote from..
             <strong>Archives</strong>
         </div>
         <div class="content-inner">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/Black-bird-demo/archives/2013/12/">December 2013</a><span class="archive-list-count">15</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/Black-bird-demo/archives/2017/07/">July 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/Black-bird-demo/archives/2013/12/">December 2013</a><span class="archive-list-count">15</span></li></ul>
         </div>
     </div>
 </aside>
@@ -626,6 +749,7 @@ Quote from..
     </div>
 </div>
 
+      </div>
   </div>
   <style>
   #footer {
@@ -642,25 +766,34 @@ Quote from..
   <div class="container has-padding">
     <div>
       <div>
+        <!--请您保留作者署名, 主题制作来之不易-->
         Theme by <a href="http://haojen.github.io/">Haojen Ma</a>
         <br>
         Copyright © Haojen Ma 2017
         <br>
-        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
       </div>
     </div>
-    
-
-<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>-->
-
-
-  <link rel="stylesheet" href="/Black-bird-demo/fancybox/jquery.fancybox.css">
-  <script src="/Black-bird-demo/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/Black-bird-demo/js/script.js"></script>
-
   </div>
 </footer>
+
+<script src="/Black-bird-demo/js/search_core.js"></script>
+<script src="/Black-bird-demo/js/script.js"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>

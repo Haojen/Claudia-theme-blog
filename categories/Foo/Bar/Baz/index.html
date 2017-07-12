@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html class="full-height">
 <head>
-  <meta charset="utf-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   <link rel="stylesheet" href="//cdn.bootcss.com/bulma/0.4.1/css/bulma.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   
-  <title>Category: Baz | Haojen</title>
+  <title>Catégorie: Baz | Haojen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Haojen">
@@ -24,51 +24,91 @@
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
   <link rel="stylesheet" href="/Black-bird-demo/css/common.css">
-  <link rel="stylesheet" href="/Black-bird-demo/css/nav.css">
+<link rel="stylesheet" href="/Black-bird-demo/css/nav.css">
+<link rel="stylesheet" href="/Black-bird-demo/css/layout.css"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 </head>
 
 <body>
-  <header id="navbar" class="overflow-hidden">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><header id="navbar" class="overflow-hidden">
   <div class="container">
-    <nav class="nav" style="background-color: rgba(255,255,255,0.88);">
-      <div class="nav-left">
-        <a href="/Black-bird-demo/" class="nav-item" style="font-size: 20px;">
-          <span class="logo">Haojen Ma</span>'s Blog
-        </a>
-      </div>
-      <span class="nav-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </span>
-      <div class="nav-center is-hidden" id="search_container">
-          <div class="nav-item full-width full-height">
-              <i class="fa fa-search has-padding" aria-hidden="true"></i>
-              <input type="text" class="search-input full-height full-width" placeholder="Search post" autofocus>
-              <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
-          </div>
-      </div>
-      <div class="nav-right nav-menu">
-        
-          <a class="nav-item" href="/Black-bird-demo/">
-            Home
-          </a>
-        
-        <a class="nav-item" id="search">
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </a>
-      </div>
+    <nav class="nav">
+         <div class="nav-left">
+            <a href="/Black-bird-demo/" class="nav-item" style="font-size: 20px;">
+              <span class="logo">Diskobólos</span>'s Blog
+            </a>
+         </div>
+        <div class="nav-center is-hidden position-relative" id="search_container">
+            <div class="nav-item full-width full-height">
+                <i class="fa fa-search has-padding" aria-hidden="true"></i>
+                <input type="text" id="search_input" class="search-input full-height full-width" placeholder="Search post" autofocus>
+                <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div id="search_result"></div>
+        </div>
+        <div class="nav-right nav-menu">
+            <a class="nav-item" id="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+            
+            <a class="nav-item" href="/Black-bird-demo/">
+                Home
+            </a>
+            
+            <a class="nav-item" href="/Black-bird-demo/works">
+                My Works
+            </a>
+            
+            <a class="nav-item" href="/Black-bird-demo/about">
+                About
+            </a>
+            
+        </div>
+        <span class="nav-toggle" id="navMenuDropdown">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        <div class="navbar-menu position-absolute full-width content-box is-hidden-desktop is-flex flex-column center" style="top: 100%;">
+            
+            <a class="nav-item flex-1" href="/Black-bird-demo/">
+                Home
+            </a>
+            
+            <a class="nav-item flex-1" href="/Black-bird-demo/works">
+                My Works
+            </a>
+            
+            <a class="nav-item flex-1" href="/Black-bird-demo/about">
+                About
+            </a>
+            
+        </div>
     </nav>
   </div>
 </header>
 
   <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
-      
-<div class="container">
+      <div class="main-inner-content">
+          <style>
+    .container.tag-cate-wrap {
+        min-height: 93vh;
+    }
+
+    .category-title-inner {
+        padding-top: 50px;
+    }
+
+    strong {
+        text-transform: capitalize;
+    }
+</style>
+
+
+<div class="container tag-cate-wrap">
     <div class="category-title-inner content has-text-centered">
-        <h1><strong style="border-top: 2px solid; border-bottom: 2px solid;">category-Baz</strong></h1>
+        <h1><strong style="border-top: 2px solid; border-bottom: 2px solid;">category·Baz</strong></h1>
     </div>
 
     
@@ -78,28 +118,30 @@
                 
                 <a href="/Black-bird-demo/2013/12/24/categories/">
                     
+                    <div class="media-left">
+                        <figure class="image is-128x128">
+                            <img src="http://8-themes.com/wp-content/uploads/2015/12/World___USA_St._Mary_Lake_in_Montana__USA_101449_-1920x1080.jpg" style="height: 100%; width: 100%">
+                        </figure>
+                    </div>
+                    
                     <div class="media-content">
                         <div class="content">
                             <p>
                                 <strong>Categories</strong> <small class="post-date">at: 2013-12-24</small>
                                 <br>
-                                This post contains 3 categories. Make sure your theme can display all of the categories.
+                                
+This post contains 3 categories. Make sure your theme can display all of the categories.
 
                             </p>
+                            <button class="button is-info">Read</button>
                         </div>
-                        <nav class="level is-mobile">
-                            <div class="level-left">
-                                <a class="level-item">
-                                    <span class="icon is-small"><i class="fa fa-reply"></i></span>
-                                </a>
-                            </div>
-                        </nav>
                     </div>
                 </a>
             </article>
         </div>
     
 </div>
+      </div>
   </div>
   <style>
   #footer {
@@ -116,25 +158,34 @@
   <div class="container has-padding">
     <div>
       <div>
+        <!--请您保留作者署名, 主题制作来之不易-->
         Theme by <a href="http://haojen.github.io/">Haojen Ma</a>
         <br>
         Copyright © Haojen Ma 2017
         <br>
-        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
       </div>
     </div>
-    
-
-<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>-->
-
-
-  <link rel="stylesheet" href="/Black-bird-demo/fancybox/jquery.fancybox.css">
-  <script src="/Black-bird-demo/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/Black-bird-demo/js/script.js"></script>
-
   </div>
 </footer>
+
+<script src="/Black-bird-demo/js/search_core.js"></script>
+<script src="/Black-bird-demo/js/script.js"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
