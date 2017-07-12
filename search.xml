@@ -4,7 +4,7 @@
     
     <entry>
       <title><![CDATA[Flowchart Demo]]></title>
-      <url>/Black-bird-demo/2017/07/09/Flowchart-Demo/</url>
+      <url>/Claudia-haojen-blog/2017/07/09/Flowchart-Demo/</url>
       <content type="html"><![CDATA[<p><img src="http://www.success.com/sites/default/files/main/blogposts/secretsofthemindhighlysuccessfulpeopleknowthatyoudont.jpg" alt="post-cover"></p>
 <blockquote>
 <p>使用教程请参阅<a href="https://github.com/bubkoo/hexo-filter-flowchart" target="_blank" rel="external">这篇文档</a></p>
@@ -32,7 +32,7 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
     
     <entry>
       <title><![CDATA[Emoji-Demo]]></title>
-      <url>/Black-bird-demo/2017/07/06/Emoji-Demo/</url>
+      <url>/Claudia-haojen-blog/2017/07/06/Emoji-Demo/</url>
       <content type="html"><![CDATA[<p><img src="https://blogdeshark.files.wordpress.com/2014/10/pia14293_achicado_nasa.jpg" alt="post-cover"></p>
 <h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法:"></a>使用方法:</h1><p>比如你想发一个笑脸<img class="github-emoji" title="smile" alt="smile" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png?v7" height="20" width="20"> 直接输入笑脸对应的 emmoji 编码 <code>&lt;img class=&quot;github-emoji&quot;  title=&quot;smile&quot; alt=&quot;smile&quot; src=&quot;https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png?v7&quot; height=&quot;20&quot; width=&quot;20&quot; /&gt;</code>就可以<br>具体使用教程请参阅这篇<a href="https://github.com/crimx/hexo-filter-github-emojis" target="_blank" rel="external">文档</a>和 <a href="https://www.webpagefx.com/tools/emoji-cheat-sheet/" target="_blank" rel="external">Emoji cheat sheet</a></p>
 <h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><h2 id="Smileys-amp-People"><a href="#Smileys-amp-People" class="headerlink" title="Smileys &amp; People"></a>Smileys &amp; People</h2><p>Find emojis by name or description</p>
@@ -58,7 +58,7 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
     
     <entry>
       <title><![CDATA[Math Demo]]></title>
-      <url>/Black-bird-demo/2017/07/05/Math-Demo/</url>
+      <url>/Claudia-haojen-blog/2017/07/05/Math-Demo/</url>
       <content type="html"><![CDATA[<p><img src="http://www.clubhousenews.com/wp-content/uploads/2014/01/math.jpg" alt="post-cover"></p>
 <blockquote>
 <p>使用教程, 请参阅<a href="https://github.com/phoenixcw/hexo-renderer-mathjax" target="_blank" rel="external">该文档</a>和<a href="https://www.mathjax.org/" target="_blank" rel="external">mathjax官网</a></p>
@@ -73,7 +73,7 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
     
     <entry>
       <title><![CDATA[Images]]></title>
-      <url>/Black-bird-demo/2013/12/26/images/</url>
+      <url>/Claudia-haojen-blog/2013/12/26/images/</url>
       <content type="html"><![CDATA[<p>This is a image test post.</p>
 <p><img src="https://williamjepma.files.wordpress.com/2013/09/127_hours1.jpg" alt="Caption"></p>
 <blockquote>
@@ -95,7 +95,7 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
     
     <entry>
       <title></title>
-      <url>/Black-bird-demo/2013/12/25/no-title/</url>
+      <url>/Claudia-haojen-blog/2013/12/25/no-title/</url>
       <content type="html"><![CDATA[<p>This post doesn’t have a title. Make sure it’s accessible.</p>
 ]]></content>
       
@@ -104,7 +104,7 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
     
     <entry>
       <title><![CDATA[Excerpts]]></title>
-      <url>/Black-bird-demo/2013/12/25/excerpts/</url>
+      <url>/Claudia-haojen-blog/2013/12/25/excerpts/</url>
       <content type="html"><![CDATA[<p>The following contents should be invisible in home/archive page.</p>
 <a id="more"></a>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna vitae velit eleifend interdum at ac nisi. In nec ligula lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eu cursus erat, ut dapibus quam. Aliquam eleifend dolor vitae libero pharetra adipiscing. Etiam adipiscing dolor a quam tempor, eu convallis nulla varius. Aliquam sollicitudin risus a porta aliquam. Ut nec velit dolor. Proin eget leo lobortis, aliquam est sed, mollis mauris. Fusce vitae leo pretium massa accumsan condimentum. Fusce malesuada gravida lectus vel vulputate. Donec bibendum porta nibh ut aliquam.</p>
@@ -132,7 +132,7 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
     
     <entry>
       <title><![CDATA[Videos]]></title>
-      <url>/Black-bird-demo/2013/12/25/videos/</url>
+      <url>/Claudia-haojen-blog/2013/12/25/videos/</url>
       <content type="html"><![CDATA[<p>This is a video test post.</p>
 <p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495839619058&di=a317521990c38c55d05f28f575d30d54&imgtype=0&src=http%3A%2F%2Fcms-bucket.nosdn.127.net%2Fcatchpic%2F2%2F2a%2F2aaf2e2b48f5df317e71f648fccd44fa.jpg%3FimageView%26thumbnail%3D550x0"></p>
 <p><strong>Youtube</strong></p>
@@ -151,7 +151,7 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
     
     <entry>
       <title><![CDATA[Gallery Post]]></title>
-      <url>/Black-bird-demo/2013/12/25/gallery-post/</url>
+      <url>/Claudia-haojen-blog/2013/12/25/gallery-post/</url>
       <content type="html"><![CDATA[<p>This post contains 4 photos:</p>
 <ul>
 <li>Widescreen wallpaper</li>
@@ -176,7 +176,7 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
     
     <entry>
       <title><![CDATA[Tag Plugins]]></title>
-      <url>/Black-bird-demo/2013/12/25/tag-plugins/</url>
+      <url>/Claudia-haojen-blog/2013/12/25/tag-plugins/</url>
       <content type="html"><![CDATA[<p>This post is used for testing tag plugins. See <a href="http://zespia.tw/hexo/docs/tag-plugins.html" target="_blank" rel="external">docs</a> for more info.</p>
 <h2 id="Block-Quote"><a href="#Block-Quote" class="headerlink" title="Block Quote"></a>Block Quote</h2><h3 id="Normal-blockquote"><a href="#Normal-blockquote" class="headerlink" title="Normal blockquote"></a>Normal blockquote</h3><blockquote>
 <p>Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.</p>
@@ -208,7 +208,7 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
     
     <entry>
       <title><![CDATA[www.google.com]]></title>
-      <url>/Black-bird-demo/2013/12/24/link-post-without-title/</url>
+      <url>/Claudia-haojen-blog/2013/12/24/link-post-without-title/</url>
       <content type="html"><![CDATA[<p>This is a link post without a title. The title should be the link with or without protocol. Clicking on the link should open <a href="http://www.google.com/" target="_blank" rel="external">Google</a> in a new tab or window.</p>
 ]]></content>
       
@@ -217,7 +217,7 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
     
     <entry>
       <title><![CDATA[日本語テスト]]></title>
-      <url>/Black-bird-demo/2013/12/24/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/</url>
+      <url>/Claudia-haojen-blog/2013/12/24/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/</url>
       <content type="html"><![CDATA[<p>This is a Japanese test post.</p>
 <p>私は昨日ついにその助力家というのの上よりするたなけれ。</p>
 <p>最も今をお話団はちょうどこの前後なかろでくらいに困りがいるたをは帰着考えたなかって、そうにもするでうたらない。</p>
@@ -251,7 +251,7 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
     
     <entry>
       <title><![CDATA[中文測試]]></title>
-      <url>/Black-bird-demo/2013/12/24/%E4%B8%AD%E6%96%87%E6%B5%8B%E8%AF%95/</url>
+      <url>/Claudia-haojen-blog/2013/12/24/%E4%B8%AD%E6%96%87%E6%B5%8B%E8%AF%95/</url>
       <content type="html"><![CDATA[<p>This is a Chinese test post.</p>
 <p>善我王上魚、產生資西員合兒臉趣論。畫衣生這著爸毛親可時，安程幾？合學作。觀經而作建。都非子作這！法如言子你關！手師也。</p>
 <p>以也座論頭室業放。要車時地變此親不老高小是統習直麼調未，行年香一？</p>
@@ -268,7 +268,7 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
     
     <entry>
       <title><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.]]></title>
-      <url>/Black-bird-demo/2013/12/24/long-title/</url>
+      <url>/Claudia-haojen-blog/2013/12/24/long-title/</url>
       <content type="html"><![CDATA[<p>This post has a long title. Make sure the title displayed right.</p>
 ]]></content>
       
@@ -277,7 +277,7 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
     
     <entry>
       <title><![CDATA[Categories]]></title>
-      <url>/Black-bird-demo/2013/12/24/categories/</url>
+      <url>/Claudia-haojen-blog/2013/12/24/categories/</url>
       <content type="html"><![CDATA[<p><img src="http://8-themes.com/wp-content/uploads/2015/12/World___USA_St._Mary_Lake_in_Montana__USA_101449_-1920x1080.jpg" alt=""></p>
 <p>This post contains 3 categories. Make sure your theme can display all of the categories.</p>
 ]]></content>
@@ -301,7 +301,7 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
     
     <entry>
       <title><![CDATA[Link Post]]></title>
-      <url>/Black-bird-demo/2013/12/24/link-post/</url>
+      <url>/Claudia-haojen-blog/2013/12/24/link-post/</url>
       <content type="html"><![CDATA[<p>This is a link post. Clicking on the link should open <a href="http://www.google.com/" target="_blank" rel="external">Google</a> in a new tab or window.</p>
 ]]></content>
       
@@ -310,7 +310,7 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
     
     <entry>
       <title><![CDATA[Tags]]></title>
-      <url>/Black-bird-demo/2013/12/24/tags/</url>
+      <url>/Claudia-haojen-blog/2013/12/24/tags/</url>
       <content type="html"><![CDATA[<p>This post contains 3 tags. Make sure your theme can display all of the tags.</p>
 ]]></content>
       
@@ -337,7 +337,7 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
     
     <entry>
       <title><![CDATA[Elements]]></title>
-      <url>/Black-bird-demo/2013/12/24/elements/</url>
+      <url>/Claudia-haojen-blog/2013/12/24/elements/</url>
       <content type="html"><![CDATA[<p>The purpose of this post is to help you make sure all of HTML elements can display properly. If you use CSS reset, don’t forget to redefine the style by yourself.</p>
 <hr>
 <h1 id="Heading-1"><a href="#Heading-1" class="headerlink" title="Heading 1"></a>Heading 1</h1><h2 id="Heading-2"><a href="#Heading-2" class="headerlink" title="Heading 2"></a>Heading 2</h2><h3 id="Heading-3"><a href="#Heading-3" class="headerlink" title="Heading 3"></a>Heading 3</h3><h4 id="Heading-4"><a href="#Heading-4" class="headerlink" title="Heading 4"></a>Heading 4</h4><h5 id="Heading-5"><a href="#Heading-5" class="headerlink" title="Heading 5"></a>Heading 5</h5><h6 id="Heading-6"><a href="#Heading-6" class="headerlink" title="Heading 6"></a>Heading 6</h6><hr>
@@ -405,7 +405,7 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
     
     <entry>
       <title><![CDATA[Hello World]]></title>
-      <url>/Black-bird-demo/2013/12/24/hello-world/</url>
+      <url>/Claudia-haojen-blog/2013/12/24/hello-world/</url>
       <content type="html"><![CDATA[<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank" rel="external">documentation</a> to learn how to use.</p>
 ]]></content>
       
@@ -417,26 +417,26 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
     
     <entry>
       <title><![CDATA[about]]></title>
-      <url>/Black-bird-demo/about/index.html</url>
+      <url>/Claudia-haojen-blog/about/index.html</url>
       <content type="html"></content>
     </entry>
     
     <entry>
       <title><![CDATA[Page]]></title>
-      <url>/Black-bird-demo/page/index.html</url>
+      <url>/Claudia-haojen-blog/page/index.html</url>
       <content type="html"><![CDATA[<p>This is a page test.</p>
 ]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[tags]]></title>
-      <url>/Black-bird-demo/tags/index.html</url>
+      <url>/Claudia-haojen-blog/tags/index.html</url>
       <content type="html"></content>
     </entry>
     
     <entry>
       <title><![CDATA[My Works]]></title>
-      <url>/Black-bird-demo/works/index.html</url>
+      <url>/Claudia-haojen-blog/works/index.html</url>
       <content type="html"></content>
     </entry>
     
