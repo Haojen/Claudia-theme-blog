@@ -414,31 +414,4 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
     
   
   
-    
-    <entry>
-      <title><![CDATA[about]]></title>
-      <url>/Claudia-theme-blog/about/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Page]]></title>
-      <url>/Claudia-theme-blog/page/index.html</url>
-      <content type="html"><![CDATA[<p>This is a page test.</p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[tags]]></title>
-      <url>/Claudia-theme-blog/tags/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[My Works]]></title>
-      <url>/Claudia-theme-blog/works/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-  
 </search>
