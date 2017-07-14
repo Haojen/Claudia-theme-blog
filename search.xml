@@ -63,6 +63,9 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
 <blockquote>
 <p>使用教程, 请参阅<a href="https://github.com/phoenixcw/hexo-renderer-mathjax" target="_blank" rel="external">该文档</a>和<a href="https://www.mathjax.org/" target="_blank" rel="external">mathjax官网</a></p>
 </blockquote>
+<p>$$<br>\begin{aligned}<br>x_{f} = &amp; x_0+k(x-x_0) \\<br>y_{f} = &amp; y_0+k(y-y_0) \\<br>s_{f} = &amp; k<br>\end{aligned}<br>$$</p>
+<p>\Simple inline $a = b + c$</p>
+<p>$$\frac{\partial u}{\partial t}<br>= h^2 \left( \frac{\partial^2 u}{\partial x^2} +<br>\frac{\partial^2 u}{\partial y^2} +<br>\frac{\partial^2 u}{\partial z^2}\right)$$</p>
 <p>$$<br>\frac{\partial u}{\partial t}<br>= h^2 \left( \frac{\partial^2 u}{\partial x^2} +<br>\frac{\partial^2 u}{\partial y^2} +<br>\frac{\partial^2 u}{\partial z^2}\right)<br>$$</p>
 <p>$$\cos 2\theta = \cos^2 \theta - \sin^2 \theta =  2 \cos^2 \theta - 1$$</p>
 <p>\[<br>    A^T_S = B<br>\]</p>
