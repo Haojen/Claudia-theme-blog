@@ -1,10 +1,10 @@
 name: Build Claudia blog
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
     types: [ closed ]
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build-deploy:
