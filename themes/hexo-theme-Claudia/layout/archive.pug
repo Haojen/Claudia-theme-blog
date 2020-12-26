@@ -1,0 +1,15 @@
+extends widget/layout.pug
+
+block topic
+    span= `Archive · ${ page.year || 'all' }`
+
+block content
+    include widget/post-list
+        block sidebar
+            div(style="position: sticky; top: 50px;")
+                include widget/archives.pug
+block script
+    script(src='/js/addActiveLinkStyle.js')
+
+
+

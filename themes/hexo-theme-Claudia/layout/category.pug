@@ -1,0 +1,17 @@
+extends widget/layout.pug
+
+block topic
+  span= `Category · ${ page.category || 'all' }`
+
+block content
+  include widget/post-list
+    block sidebar
+      div(style="position: sticky; top: 50px;")
+        include widget/categories.pug
+
+block script
+  script(src='/js/addActiveLinkStyle.js')
+
+
+
+

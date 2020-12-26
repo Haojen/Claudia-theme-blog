@@ -1,0 +1,40 @@
+
+# html lang
+language: en
+
+# main menu navigation
+menu:
+  Home: /
+  About: /about
+  Archives: /archives
+
+widgets:
+  - tag
+  - archive
+  - recent_posts
+#  - category
+
+# social config
+social:
+  zhihu:
+  twitter: /
+  facebook: /
+  linkedin:
+  instagram: /
+  github: haojen
+
+user:
+  name: Haojen Ma
+  avatar: /images/avatar.jpg
+  location: In the dust
+  description: May the Force be with you
+
+# stylesheets loaded in the <head>
+stylesheets:
+  - /style/bulma.css
+  - /style/layout.css
+  - /style/widget-header.css
+
+# scripts loaded in the end of the body
+scripts:
+  - /js/theme.js

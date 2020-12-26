@@ -1,0 +1,10 @@
+extends widget/layout.pug
+
+block topic
+  span= `Tag · ${ page.tag || 'all' }`
+
+block content
+  include widget/post-list
+    block sidebar
+      div(style="position: sticky; top: 50px;")
+        include widget/tag.pug
