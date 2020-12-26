@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "hexo": "^5.0.0",
+    "hexo-cli": "^4.2.0",
     "hexo-browsersync": "^0.3.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",

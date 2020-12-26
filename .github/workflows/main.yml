@@ -11,9 +11,8 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm ci hexo-cli -g
       - run: npm ci
-      - run: hexo build
+      - run: hexo generate
       - name: deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
