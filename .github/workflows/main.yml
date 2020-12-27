@@ -11,7 +11,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
-      - run: sudo npm install hexo-cli -g
+      - run: npm install hexo-cli -g
       - run: npm ci
       - run: hexo generate
       - name: deploy

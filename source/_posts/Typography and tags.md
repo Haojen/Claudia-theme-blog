@@ -6,8 +6,8 @@ tags:
   - hexo
 categories:
   - notes
-cover: /images/illustration-5240508_1280.jpg
 ---
+![$cover](images/illustration-5240508_1280.jpg)
 
 # Installation
 ---

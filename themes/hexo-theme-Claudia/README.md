@@ -75,7 +75,7 @@ About Somebody
 
 ### Set post cover image
 
-`cover-image`:  set  cover image path
+`$cover`:  set cover image
 
 ```yaml
 --
@@ -83,8 +83,9 @@ title: post title
 categories: [notes]
 date: 2020-12-25 10:05:56
 tags: [hexo, cutie, tutorial]
-cover-image: /images/yourImg.png
 ---
+// set cover example
+![$cover](/images/yourImg.png)
 ```
 
 ## License
