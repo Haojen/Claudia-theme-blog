@@ -10,6 +10,8 @@ body {
     color: #4a4a4a; }
     body a:hover {
       color: #3273dc; }
+  body img[alt="$cover"] {
+    display: none; }
   body .tag.post-item-tag {
     margin-right: 5px;
     font-weight: bold;
