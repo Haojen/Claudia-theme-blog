@@ -16,7 +16,6 @@ timezone: ''
 #url: https://haojen.github.io/Claudia-theme-blog/
 url: http://example.com
 root: /Claudia-theme-blog/
-#root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
