@@ -25,14 +25,11 @@
       border-radius: 6px;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
-.post-page .post-content {
-  background: #ffffff;
-  padding: 15px 15px 30px; }
-  .post-page .post-content pre {
-    padding: 5px;
-    background: transparent;
-    border-radius: 6px;
-    border: 1px solid rgba(0, 0, 0, 0.05); }
+.post-page .post-content pre {
+  padding: 5px;
+  background: transparent;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.08); }
 
 .post-page .toc {
   position: sticky;
