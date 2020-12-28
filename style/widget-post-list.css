@@ -9,13 +9,10 @@
     width: 100%;
     max-height: 300px;
     object-fit: cover; }
-  .post-container .post-item-card .post-card-content {
-    padding: 15px 15px 25px; }
-    .post-container .post-item-card .post-card-content time {
-      font-size: 14px;
-      font-weight: bold; }
-    .post-container .post-item-card .post-card-content .read-more-btn {
-      border-radius: 6px; }
+  .post-container .post-item-card .post-card-content time {
+    font-size: 14px; }
+  .post-container .post-item-card .post-card-content .read-more-btn {
+    border-radius: 6px; }
 
 .post-container .aside-card-container {
   padding: 10px;
@@ -102,7 +99,6 @@
     color: #585858;
     font-family: sans-serif; }
   .post-container .profile-widget address {
-    color: gray;
     margin-top: 14px;
     font-style: normal; }
   .post-container .profile-widget .sns-container {
