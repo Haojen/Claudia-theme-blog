@@ -18,11 +18,8 @@ $avatarSize: 180px;
     }
 
     .post-card-content {
-      padding: 15px 15px 25px;
-
       time {
         font-size: 14px;
-        font-weight: bold;
       }
 
       .read-more-btn {
@@ -120,7 +117,6 @@ $avatarSize: 180px;
     }
 
     address {
-      color: gray;
       margin-top: 14px;
       font-style: normal;
     }
@@ -132,7 +128,6 @@ $avatarSize: 180px;
       border-top: 1px solid rgba(0, 0, 0, 0.05);
 
       i {
-        color: #000;
         margin: 0 8px;
         font-size: 34px;
       }

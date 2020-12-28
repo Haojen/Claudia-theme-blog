@@ -37,16 +37,21 @@
       daily: false
     theme: cutie
     ```</code></pre>
-<dl><dt>Bring site alive</dt><dd><code>bash     hexo s --debug     </code></dd></dl><h2 id="Install-for-an-existing-site"><a href="#Install-for-an-existing-site" class="headerlink" title="Install for an existing site"></a>Install for an existing site</h2><dl><dt>Working directory</dt><dd>Make sure your terminal (command line) is currently in the root folder of the site.</dd></dl><dl><dt>Installation steps</dt><dd>1. [<em>Optional</em>][<em>Recommended</em>] Uninstall <code>hexo-renderer-marked</code> and install <code>hexo-renderer-markdown-it</code> and associated plugins.</dd></dl><pre><code>    ```bash
-    npm un hexo-renderer-marked --save
-    npm i hexo-renderer-markdown-it --save
-    npm i markdown-it-emoji --save
-    npm i markdown-it-mark --save
-    npm i markdown-it-deflist --save
-    npm i markdown-it-container --save
-    ```
-2. Download [latest theme cutie](https://github.com/qutang/hexo-theme-cutie/releases/latest)</code></pre>
-<p> and unzip it to <code>themes/</code> folder in your site. Then rename it to <code>cutie</code>.</p>
+<dl><dt>Bring site alive</dt><dd><code>bash     hexo s --debug     </code></dd></dl><h2 id="Install-for-an-existing-site"><a href="#Install-for-an-existing-site" class="headerlink" title="Install for an existing site"></a>Install for an existing site</h2><dl><dt>Working directory</dt><dd>Make sure your terminal (command line) is currently in the root folder of the site.</dd></dl><p>Installation steps<br>:</p>
+<ol>
+<li><p>[<em>Optional</em>][<em>Recommended</em>] Uninstall <code>hexo-renderer-marked</code> and install <code>hexo-renderer-markdown-it</code> and associated plugins.</p>
+<pre><code> ```bash
+ npm un hexo-renderer-marked --save
+ npm i hexo-renderer-markdown-it --save
+ npm i markdown-it-emoji --save
+ npm i markdown-it-mark --save
+ npm i markdown-it-deflist --save
+ npm i markdown-it-container --save
+ ```</code></pre>
+</li>
+<li><p>Download <a target="_blank" rel="noopener" href="https://github.com/qutang/hexo-theme-cutie/releases/latest">latest theme cutie</a><br>and unzip it to <code>themes/</code> folder in your site. Then rename it to <code>cutie</code>.</p>
+</li>
+</ol>
 <dl><dt>Initial configuration file</dt><dd><code>_config.yml</code> in the root path of your site.</dd></dl><dl><dt>Initial configuration</dt><dd>1. Follow standard hexo initial configuration: <a target="_blank" rel="noopener" href="https://hexo.io/docs/configuration.html">https://hexo.io/docs/configuration.html</a><br>    2. Add variables or modify the variables in your <code>_config.yml</code> according to following snippet.</dd></dl><pre><code>    ```yml _config.yml
     highlight:
       enable: true

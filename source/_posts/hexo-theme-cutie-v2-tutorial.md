@@ -8,6 +8,7 @@ date: 2018-02-12 00:00:00 Z
 ---
 
 ![$cover](/images/illustration-4377408_1280.png)
+
 Theme cutie has evolved from v1.x to v2.x with a refreshed and fine tuned design and more features. Follow the following instruction to install and use it. You may navigate this website to experience the new look and interaction of v2.x.
 
 __Thank you for your stars and support__.
@@ -96,7 +97,8 @@ Working directory
 :   Make sure your terminal (command line) is currently in the root folder of the site.
 
 Installation steps
-:   1. [_Optional_][_Recommended_] Uninstall `hexo-renderer-marked` and install `hexo-renderer-markdown-it` and associated plugins.
+:
+1. [_Optional_][_Recommended_] Uninstall `hexo-renderer-marked` and install `hexo-renderer-markdown-it` and associated plugins.
 
         ```bash
         npm un hexo-renderer-marked --save
@@ -106,7 +108,8 @@ Installation steps
         npm i markdown-it-deflist --save
         npm i markdown-it-container --save
         ```
-    2. Download [latest theme cutie](https://github.com/qutang/hexo-theme-cutie/releases/latest)
+
+2. Download [latest theme cutie](https://github.com/qutang/hexo-theme-cutie/releases/latest)
  and unzip it to `themes/` folder in your site. Then rename it to `cutie`.
 
 Initial configuration file
