@@ -7,7 +7,7 @@ tags:
 categories:
   - notes
 ---
-![$cover](images/illustration-5240508_1280.jpg)
+![$cover](images/lake.png)
 
 # Installation
 ---
