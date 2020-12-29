@@ -1,0 +1,48 @@
+@import url("//at.alicdn.com/t/font_2266068_0fz09zmium7k.css");
+html {
+  overflow: hidden; }
+  html body {
+    margin: 0;
+    height: 100vh;
+    overflow: auto; }
+    html body a {
+      color: #4a4a4a; }
+      html body a:hover {
+        color: #3273dc; }
+    html body .tag.post-item-tag {
+      margin-right: 5px;
+      font-weight: bold;
+      color: darkorange;
+      font-style: normal;
+      border-radius: 10px;
+      background: transparent;
+      border: 2px solid darkorange; }
+    html body > footer {
+      margin: 0 30px;
+      padding: 20px 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.05); }
+      html body > footer .sns-container .iconfont {
+        margin: 0 5px;
+        font-size: 30px; }
+
+.header-widget {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100vw;
+  height: 42px;
+  padding: 0 15px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.85); }
+  .header-widget a {
+    color: #2b2a2a;
+    margin: 0 8px;
+    font-weight: bold; }
+  .header-widget h3 {
+    font-weight: bold; }
