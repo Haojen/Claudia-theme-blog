@@ -4,12 +4,12 @@
 
 # Site
 title: John Doe's blog
-subtitle: ''
-description: ''
+subtitle:
+description:
 keywords:
 author: John Doe
 language: en
-timezone: ''
+timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
