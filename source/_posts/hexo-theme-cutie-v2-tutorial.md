@@ -8,7 +8,6 @@ date: 2018-02-12 00:00:00 Z
 ---
 
 ![$cover](/images/tree.png)
-[comment]: <> (![$cover]&#40;/images/illustration-4377408_1280.png&#41;)
 
 Theme cutie has evolved from v1.x to v2.x with a refreshed and fine tuned design and more features. Follow the following instruction to install and use it. You may navigate this website to experience the new look and interaction of v2.x.
 
