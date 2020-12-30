@@ -26,7 +26,7 @@
 .post-container .recent-widget h3,
 .post-container .tag-widget h3 {
   font-weight: bold;
-  margin-bottom: 15px; }
+  margin-bottom: 10px; }
 
 .post-container .categories-widget .category-list .category-list-item,
 .post-container .categories-widget .archive-list .archive-list-item,
@@ -131,6 +131,14 @@
   .post-container .recent-widget section time {
     font-size: 12px;
     font-weight: bold; }
+
+.post-container .tag-widget > section {
+  overflow: auto;
+  max-height: 30vh; }
+
+.post-container .archives-widget > section {
+  overflow: auto;
+  max-height: 45vh; }
 
 .post-container .paginator .page-number,
 .post-container .paginator .extend {
