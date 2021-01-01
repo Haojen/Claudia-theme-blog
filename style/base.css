@@ -2,7 +2,7 @@
 html body {
   margin: 0;
   height: 100vh;
-  overflow: auto; }
+  padding-top: 45px; }
   html body a {
     color: #4a4a4a; }
     html body a:hover {
@@ -15,6 +15,9 @@ html body {
     border-radius: 10px;
     background: transparent;
     border: 2px solid darkorange; }
+  html body > main {
+    flex-grow: 2;
+    flex-basis: 0; }
   html body > footer {
     margin: 0 30px;
     padding: 20px 0;
@@ -24,7 +27,7 @@ html body {
       font-size: 30px; }
 
 .header-widget {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
