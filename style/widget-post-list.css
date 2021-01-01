@@ -5,10 +5,25 @@
   overflow: hidden;
   box-shadow: 0 6px 30px -10px rgba(0, 0, 0, 0.1);
   border-radius: 6px; }
-  .post-container .post-item-card img {
-    display: block;
-    width: 100%;
-    object-fit: cover; }
+  .post-container .post-item-card > header {
+    overflow: hidden; }
+    .post-container .post-item-card > header .post-cover-backdrop {
+      position: absolute;
+      z-index: 0; }
+      .post-container .post-item-card > header .post-cover-backdrop img {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+        transform: scale(1.2);
+        filter: blur(20px); }
+    .post-container .post-item-card > header .post-cover-link {
+      position: relative;
+      z-index: 1;
+      font-size: 0;
+      width: 100%; }
+    .post-container .post-item-card > header .post-cover-img {
+      max-height: 360px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); }
   .post-container .post-item-card .post-card-content time {
     font-size: 14px; }
   .post-container .post-item-card .post-card-content .read-more-btn {
