@@ -25,18 +25,19 @@ html(lang=config.language)
     block style
   body.is-flex.is-flex-direction-column
     include ./header.pug
-    main.is-flex-grow-2
+    main
       block content
     footer.is-flex.is-flex-direction-column.is-align-items-center.is-flex-shrink-0.is-family-serif
       section.sns-container
         include ./sns.pug
       p
         span Copyright ©
-        span= ' ' + config.author + ' ' + new Date().getFullYear()
+        - var author = (theme.user && theme.user.name) || config.author || ''
+        span= ' ' + author + ' ' + new Date().getFullYear()
       div.is-flex
         p Powered by Hexo｜
         p.is-flex.is-justify-content-center
-          a(href='//github.com/haojen') theme by &nbspHaojen&nbsp
+          a(href='//github.com/haojen') Theme by &nbspHaojen&nbsp
         div(style="margin-top: 2px")
           a(class="github-button" href="https://github.com/haojen/hexo-theme-Claudia" data-icon="octicon-star" data-color-scheme="no-preference: light; light: light; dark: light;" data-show-count="true")
 
