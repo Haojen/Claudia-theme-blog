@@ -28,6 +28,8 @@
     margin-top: 5px;
     margin-left: 15px;
     list-style: none !important; }
+  .post-page .toc .is-active {
+    color: #3273dc; }
 
 .post-page :target {
   padding-top: 60px;
