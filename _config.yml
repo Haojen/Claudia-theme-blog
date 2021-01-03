@@ -87,6 +87,13 @@ updated_option: 'mtime'
 per_page: 4
 pagination_dir: page
 
+# https://github.com/hexojs/hexo-generator-feed
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
 #include:
