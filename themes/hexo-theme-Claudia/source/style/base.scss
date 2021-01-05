@@ -1,6 +1,9 @@
 @import url("//at.alicdn.com/t/font_2266068_nk7rikzoyl.css");
+@import "bulma/bulma";
 @import "variable";
-html {
+@import "theme";
+
+:root {
 
   body {
     margin: 0;
@@ -8,10 +11,11 @@ html {
     padding-top: 45px;
 
     a {
-      color: #4a4a4a;
+      color: inherit;
 
       &:hover {
-        color: $activeColor;
+        text-decoration: none;
+        color: $activeColor!important;
       }
     }
 

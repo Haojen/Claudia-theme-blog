@@ -13,6 +13,8 @@ Theme cutie has evolved from v1.x to v2.x with a refreshed and fine tuned design
 
 __Thank you for your stars and support__.
 
+<!-- more -->
+
 # Installation
 
 ## Install for a new site
