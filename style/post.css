@@ -1,8 +1,17 @@
+.post-page .post-content code {
+  border-radius: 4px;
+  background: var(--third-bg-color); }
+
 .post-page .post-content pre {
-  padding: 5px;
-  background: transparent;
-  border-radius: 6px;
-  border: 1px solid rgba(0, 0, 0, 0.07); }
+  padding: 0;
+  background: transparent; }
+  .post-page .post-content pre code {
+    padding: 15px;
+    border: 1px solid var(--border-line-color);
+    background: var(--pre-code-bg-color); }
+
+.post-page .post-content .hljs {
+  color: var(--second-text-color); }
 
 .post-page .post-content img {
   display: block;
@@ -11,8 +20,11 @@
   border-radius: 6px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); }
 
+.post-page .post-content a {
+  color: #3273dc; }
+
 .post-page .comment-container {
-  border-top: 1px solid rgba(0, 0, 0, 0.07); }
+  border-top: 1px solid var(--border-line-color); }
 
 .post-page .toc {
   position: sticky;
@@ -23,13 +35,13 @@
   height: calc(100vh - 100px);
   overflow: auto;
   list-style: none !important;
-  border-left: 1px solid rgba(0, 0, 0, 0.07); }
+  border-left: 1px solid var(--border-line-color); }
   .post-page .toc ol {
     margin-top: 5px;
     margin-left: 15px;
     list-style: none !important; }
-  .post-page .toc .is-active {
-    color: #3273dc; }
+  .post-page .toc .is-active span {
+    color: #3273dc !important; }
 
 .post-page :target {
   padding-top: 60px;
