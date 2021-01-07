@@ -36,6 +36,8 @@
   overflow: auto;
   list-style: none !important;
   border-left: 1px solid var(--border-line-color); }
+  .post-page .toc::-webkit-scrollbar {
+    display: none; }
   .post-page .toc ol {
     margin-top: 5px;
     margin-left: 15px;

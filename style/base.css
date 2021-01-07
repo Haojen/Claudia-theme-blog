@@ -81,6 +81,11 @@
     border-radius: 10px;
     background: transparent;
     border: 2px solid darkorange; }
+  :root body .button.is-default {
+    border: none;
+    border-radius: 6px;
+    color: var(--second-text-color);
+    background: var(--third-bg-color); }
   :root body > main {
     flex-grow: 2;
     flex-basis: 0; }
