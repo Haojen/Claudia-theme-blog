@@ -1,20 +1,41 @@
-# Claudia
-![Hexo version](https://img.shields.io/badge/hexo%20version-%3E%3D5.0-brightgreen)
-![Build Claudia blog](https://github.com/Haojen/Claudia-theme-blog/workflows/Build%20Claudia%20blog/badge.svg?branch=master)
-![GitHub issues](https://img.shields.io/github/issues/Haojen/hexo-theme-Claudia)
-![GitHub license](https://img.shields.io/github/license/Haojen/hexo-theme-Claudia)
+<h1 align="center">Claudia</h1>
+<p align="center"> 
+  Concisely designed & easy to config, match device dark mode, 90+ Lighthouse scoring
+</p>
 
+<p align="center">
+  <img  alt="Hexo version" src="https://img.shields.io/badge/hexo%20version-%3E%3D5.0-brightgreen">
+  <img  alt="Build blog" src="https://github.com/Haojen/Claudia-theme-blog/workflows/Build%20Claudia%20blog/badge.svg?branch=master">
+  <img  alt="GitHub issues" src="https://img.shields.io/github/issues/Haojen/hexo-theme-Claudia">
+  <img  alt="GitHub license" src="https://img.shields.io/github/license/Haojen/hexo-theme-Claudia">
+</p>
 
- English | [简体中文](./README-EN.md) 
+<p align="center">
+  <a href="https://haojen.github.io/Claudia-theme-blog/" rel="nofollow">Demo</a>
+</p>
 
-[Click me to preview demo](https://haojen.github.io/Claudia-theme-blog/)
+<p align="center">
+  <span>English | </span> 
+  <a href="./README-EN.md" rel="nofollow">简体中文</a>
+</p>
 
-![cover](./screenshot/claudia-cover.png)
+![cover](./screenshot/claudia-cover-v2.png)
 
-## CHANGELOG 
-Recent update [2021.01.03](CHANGELOG.md)
+## Changelog
+Recent update [2021.01.05](CHANGELOG.md)
 
 ## How to Use
+
+### Install depend
+
+Install to Hexo blog root directory, **Not theme directory** 
+```bash
+npm install hexo-renderer-pug 
+npm install hexo-renderer-sass
+
+# if you need RSS, you must be install this plugin
+npm install hexo-generator-feed
+```
 
 ### User's profile
 
@@ -73,13 +94,21 @@ comment_utteranc:
 #### 2. DISQUS
 developing..
 
+### Appearance
+```yaml
+# 1.light 
+# 2.dark
+# 3.auto (default, match device appearance setting)
+appearance: auto
+```
+
 ### Code highlighting
 
-1. Disable the default hexo highlight configuration(modify your `root/_config.yml` in root directory of hexo)
+1. **Disable** the default hexo highlight configuration(modify your `root/_config.yml` in root directory of hexo)
 
 ```yaml
 highlight:
-enable: false
+  enable: false
 ```
 
 ### Create About Page
@@ -93,11 +122,9 @@ title: about
 date: 2017-05-31 10:05:56
 layout: about
 ---
-
-About Somebody
 ```
 
-### My demo blog config 
+### My demo blog config
 https://github.com/Haojen/Claudia-theme-blog
 
 ## And my another Hexo theme
