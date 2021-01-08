@@ -1,4 +1,4 @@
-@import url("//at.alicdn.com/t/font_2266068_nk7rikzoyl.css");
+@import url("//at.alicdn.com/t/font_2266068_svkwzo3ot3a.css");
 :root.appearance-light {
   --primary-bg-color: #fff;
   --second-bg-color: #fff;
@@ -70,7 +70,7 @@
   padding-top: 45px; }
   :root body a {
     color: inherit; }
-    :root body a:hover {
+    :root body a:hover, :root body a:hover .iconfont {
       text-decoration: none;
       color: #3273dc !important; }
   :root body .tag.post-item-tag {

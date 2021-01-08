@@ -23,6 +23,13 @@
 .post-page .post-content a {
   color: #3273dc; }
 
+.post-page .jump-container .button {
+  max-width: calc(50% - 5px); }
+  .post-page .jump-container .button span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+
 .post-page .comment-container {
   border-top: 1px solid var(--border-line-color); }
 
