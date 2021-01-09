@@ -1,0 +1,247 @@
+<!DOCTYPE html><html class="appearance-auto" lang="en"><head><meta charset="UTF-8"><title>hexo theme cutie v2.x tutorial</title><meta name="description" content="May the Force be with you"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><link rel="icon"><link rel="stylesheet" href="/Claudia-theme-blog/style/bulma.css"><link rel="stylesheet" href="/Claudia-theme-blog/style/base.css"><link rel="stylesheet" href="/Claudia-theme-blog/style/helper.css"><script src="/Claudia-theme-blog/js/main.js"></script><link rel="stylesheet" href="/Claudia-theme-blog/style/post.css"><link rel="stylesheet" href="/Claudia-theme-blog/style/highlight-theme-light.css"><script src="/Claudia-theme-blog/jslib/highlight.pack.js"></script><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/Claudia-theme-blog/atom.xml" title="John Doe's blog" type="application/atom+xml">
+</head><body class="is-flex is-flex-direction-column"><header class="is-flex header-widget is-flex-shrink-0 is-align-items-center is-justify-content-space-between is-hidden-mobile"><section class="is-hidden-mobile is-flex-shrink-0"><h2><a href="/Claudia-theme-blog/">Haojen's blog</a></h2></section><h3 class="is-hidden-mobile topic is-family-serif"><p id="postTopic">hexo theme cutie v2.x tutorial</p></h3><aside class="is-flex-shrink-0"><h3 class="is-inline-block"><a href="/Claudia-theme-blog/">Home</a></h3><h3 class="is-inline-block"><a href="/Claudia-theme-blog/about">About</a></h3><h3 class="is-inline-block"><a href="/Claudia-theme-blog/archives">Archives</a></h3></aside></header><header class="is-flex header-widget is-flex-shrink-0 is-align-items-center is-justify-content-center is-hidden-tablet"><h3 class="is-inline-block"><a href="/Claudia-theme-blog/">Home</a></h3><h3 class="is-inline-block"><a href="/Claudia-theme-blog/about">About</a></h3><h3 class="is-inline-block"><a href="/Claudia-theme-blog/archives">Archives</a></h3></header><main><main class="container is-max-widescreen content section post-page pt-4 px-4"><div class="columns is-flex-desktop is-justify-content-center is-flex-direction-row-reverse"><div class="column is-3 is-hidden-mobile"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Installation"><span class="toc-text">Installation</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Install-for-a-new-site"><span class="toc-text">Install for a new site</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Install-for-an-existing-site"><span class="toc-text">Install for an existing site</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Upgrade"><span class="toc-text">Upgrade</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#From-v2-x"><span class="toc-text">From v2.x</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#From-v1-x"><span class="toc-text">From v1.x</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Configuration"><span class="toc-text">Configuration</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Language"><span class="toc-text">Language</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Scheme"><span class="toc-text">Scheme</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Animation"><span class="toc-text">Animation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Search"><span class="toc-text">Search</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#404-Page"><span class="toc-text">404 Page</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Social-network-links"><span class="toc-text">Social network links</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Site-announcement"><span class="toc-text">Site announcement</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Site-header"><span class="toc-text">Site header</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Setup-site-logo"><span class="toc-text">Setup site logo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Setup-site-name-and-subtitle"><span class="toc-text">Setup site name and subtitle</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Setup-navigation-menu"><span class="toc-text">Setup navigation menu</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Post"><span class="toc-text">Post</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Use-Light-Gallery"><span class="toc-text">Use Light Gallery</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Use-post-version"><span class="toc-text">Use post version</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#For-all-posts"><span class="toc-text">For all posts</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#For-an-individual-post"><span class="toc-text">For an individual post</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Setup-TOC-level"><span class="toc-text">Setup TOC level</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#For-all-posts-1"><span class="toc-text">For all posts</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#For-an-individual-post-1"><span class="toc-text">For an individual post</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Setup-post-comment"><span class="toc-text">Setup post comment</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#For-all-posts-2"><span class="toc-text">For all posts</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#For-an-individual-post-2"><span class="toc-text">For an individual post</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Setup-post-copyright"><span class="toc-text">Setup post copyright</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#For-all-posts-3"><span class="toc-text">For all posts</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#For-an-individual-post-3"><span class="toc-text">For an individual post</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Enable-post-visit-and-comment-counts"><span class="toc-text">Enable post visit and comment counts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Enable-post-thumb-up"><span class="toc-text">Enable post thumb up</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Use-post-announcement"><span class="toc-text">Use post announcement</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Set-post-excerpt"><span class="toc-text">Set post excerpt</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Set-post-icon"><span class="toc-text">Set post icon</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Icon-sets"><span class="toc-text">Icon sets</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Select-an-icon-set"><span class="toc-text">Select an icon set</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Add-a-new-icon-set"><span class="toc-text">Add a new icon set</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Comment-systems"><span class="toc-text">Comment systems</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Select-comment-systems"><span class="toc-text">Select comment systems</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Configuration-for-valine-comment-system"><span class="toc-text">Configuration for valine comment system</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Configuration-for-gitment-comment-system"><span class="toc-text">Configuration for gitment comment system</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Configuration-for-Disqus-comment-system"><span class="toc-text">Configuration for Disqus comment system</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Configuration-for-Livere-comment-system"><span class="toc-text">Configuration for Livere comment system</span></a></li></ol></li></ol></li></ol></div><div class="column is-9"><header class="my-4"><a href="/Claudia-theme-blog/tags/hexo"><i class="tag post-item-tag">hexo</i></a><a href="/Claudia-theme-blog/tags/cutie"><i class="tag post-item-tag">cutie</i></a><a href="/Claudia-theme-blog/tags/tutorial"><i class="tag post-item-tag">tutorial</i></a></header><h1 class="mt-0 mb-1 is-family-serif" id="postTitle">hexo theme cutie v2.x tutorial</h1><time class="has-text-grey" datetime="2018-02-11T16:00:00.000Z">2018-02-12</time><article class="mt-2 post-content"><p><img src="/Claudia-theme-blog/images/tree.png" alt="$cover"></p>
+<p>Theme cutie has evolved from v1.x to v2.x with a refreshed and fine tuned design and more features. Follow the following instruction to install and use it. You may navigate this website to experience the new look and interaction of v2.x.</p>
+<p><strong>Thank you for your stars and support</strong>.</p>
+<a id="more"></a>
+
+<h1 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h1><h2 id="Install-for-a-new-site"><a href="#Install-for-a-new-site" class="headerlink" title="Install for a new site"></a>Install for a new site</h2><dl><dt>Prerequiste</dt><dd>Make sure you install <code>node.js</code> and <code>hexo</code> through command line. Refer to official Hexo doc for detailed instruction.</dd></dl><dl><dt>Working directory</dt><dd>Make sure your terminal (command line) is currently in the folder where you want to create the site.</dd></dl><dl><dt>Installation steps</dt><dd>The first step is the standard hexo installation step. If you have done them, skip to step 2.<br>    1. Initialize your site<br>    <code>bash     hexo init your-site-folder     cd your-site-folder     npm install     </code><br>    2. [<em>Optional</em>][<em>Recommended</em>] Uninstall <code>hexo-renderer-marked</code> and install <code>hexo-renderer-markdown-it</code> and associated plugins.<br>    <code>bash     npm un hexo-renderer-marked --save     npm i hexo-renderer-markdown-it --save     npm i markdown-it-emoji --save     npm i markdown-it-mark --save     npm i markdown-it-deflist --save     npm i markdown-it-container --save     </code></dd></dl><pre><code>3. Download [latest theme cutie](https://github.com/qutang/hexo-theme-cutie/releases/latest) and unzip it to `themes/` folder in your site. Then rename it to `cutie`.</code></pre>
+<dl><dt>Initial configuration file</dt><dd><code>_config.yml</code> in the root path of your site.</dd></dl><dl><dt>Initial configuration</dt><dd>1. Follow standard hexo initial configuration: <a target="_blank" rel="noopener" href="https://hexo.io/docs/configuration.html">https://hexo.io/docs/configuration.html</a><br>    2. Add variables or modify the variables in your <code>_config.yml</code> according to following snippet.</dd></dl><pre><code>    ```yml _config.yml
+    highlight:
+      enable: true
+      line_number: true
+      auto_detect: false
+      tab_replace: 
+    markdown:
+      render:
+        html: true
+        xhtmlOut: false
+        breaks: false
+        linkify: true
+        typographer: true
+        quotes: &#39;“”‘’&#39;
+      plugins:
+        - markdown-it-abbr
+        - markdown-it-footnote
+        - markdown-it-ins
+        - markdown-it-sub
+        - markdown-it-sup
+        - markdown-it-deflist
+      anchors:
+        level: 1
+        collisionSuffix: &#39;v&#39;
+        permalink: false
+        permalinkClass: header-anchor
+        permalinkSymbol: &quot;&quot;
+        permalinkBefore: false
+    date_format: ll
+    archive_generator:
+      per_page: 0
+      yearly: true
+      monthly: false
+      daily: false
+    theme: cutie
+    ```</code></pre>
+<dl><dt>Bring site alive</dt><dd><code>bash     hexo s --debug     </code></dd></dl><h2 id="Install-for-an-existing-site"><a href="#Install-for-an-existing-site" class="headerlink" title="Install for an existing site"></a>Install for an existing site</h2><dl><dt>Working directory</dt><dd>Make sure your terminal (command line) is currently in the root folder of the site.</dd></dl><p>Installation steps<br>:</p>
+<ol>
+<li><p>[<em>Optional</em>][<em>Recommended</em>] Uninstall <code>hexo-renderer-marked</code> and install <code>hexo-renderer-markdown-it</code> and associated plugins.</p>
+<pre><code> ```bash
+ npm un hexo-renderer-marked --save
+ npm i hexo-renderer-markdown-it --save
+ npm i markdown-it-emoji --save
+ npm i markdown-it-mark --save
+ npm i markdown-it-deflist --save
+ npm i markdown-it-container --save
+ ```</code></pre>
+</li>
+<li><p>Download <a target="_blank" rel="noopener" href="https://github.com/qutang/hexo-theme-cutie/releases/latest">latest theme cutie</a><br>and unzip it to <code>themes/</code> folder in your site. Then rename it to <code>cutie</code>.</p>
+</li>
+</ol>
+<dl><dt>Initial configuration file</dt><dd><code>_config.yml</code> in the root path of your site.</dd></dl><dl><dt>Initial configuration</dt><dd>1. Follow standard hexo initial configuration: <a target="_blank" rel="noopener" href="https://hexo.io/docs/configuration.html">https://hexo.io/docs/configuration.html</a><br>    2. Add variables or modify the variables in your <code>_config.yml</code> according to following snippet.</dd></dl><pre><code>    ```yml _config.yml
+    highlight:
+      enable: true
+      line_number: true
+      auto_detect: false
+      tab_replace: 
+    markdown:
+      render:
+        html: true
+        xhtmlOut: false
+        breaks: false
+        linkify: true
+        typographer: true
+        quotes: &#39;“”‘’&#39;
+      plugins:
+        - markdown-it-abbr
+        - markdown-it-footnote
+        - markdown-it-ins
+        - markdown-it-sub
+        - markdown-it-sup
+        - markdown-it-deflist
+      anchors:
+        level: 1
+        collisionSuffix: &#39;v&#39;
+        permalink: false
+        permalinkClass: header-anchor
+        permalinkSymbol: &quot;&quot;
+        permalinkBefore: false
+    date_format: ll
+    archive_generator:
+      per_page: 0
+      yearly: true
+      monthly: false
+      daily: false
+    theme: cutie
+    ```</code></pre>
+<dl><dt>Bring site alive</dt><dd><code>bash     hexo s --debug     </code></dd></dl><h1 id="Upgrade"><a href="#Upgrade" class="headerlink" title="Upgrade"></a>Upgrade</h1><h2 id="From-v2-x"><a href="#From-v2-x" class="headerlink" title="From v2.x"></a>From v2.x</h2><dl><dt>Installation steps</dt><dd>1. Delete <code>themes/cutie/</code> folder in your site.<br>    2. Download the desired version of theme cutie from <a target="_blank" rel="noopener" href="https://github.com/qutang/hexo-theme-cutie/releases">release page</a>, unzip it to <code>themes/</code> folder and rename it to <code>cutie</code>.</dd></dl><dl><dt>Notes</dt><dd>There is a mimimal version requirement for each configuration, make sure your installed version is above it to use the corresponding configuration.</dd></dl><h2 id="From-v1-x"><a href="#From-v1-x" class="headerlink" title="From v1.x"></a>From v1.x</h2><dl><dt>Installation steps</dt><dd>1. Delete <code>themes/cutie/</code> folder in your site.<br>    2. Download the desired version of theme cutie from <a target="_blank" rel="noopener" href="https://github.com/qutang/hexo-theme-cutie/releases">release page</a>, unzip it to <code>themes/</code> folder and rename it to <code>cutie</code>.</dd></dl><dl><dt>Configuration</dt><dd>From v2.x, theme cutie uses <em>Hexo data file</em> (<code>sources/_data/cutie.yml</code>) to store all configurations, instead of using the <code>_config.yml</code> file of your site in v1.x. And the YAML structure has changed compared to v1.x. </dd></dl><pre><code>The recommendation is to configure the theme cutie from scratch using the following configuration guidelines.
+
+You may copy or reuse some configurations about theme cutie in your old `_config.yml` along the way. 
+
+Please post an issue if you have hard time migrating your configurations from v1.x to v2.x.</code></pre>
+<h1 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h1><h2 id="Language"><a href="#Language" class="headerlink" title="Language"></a>Language</h2><dl><dt>Minimal version</dt><dd><em>Taurus</em>: <code>v2.0.0-alpha</code></dd></dl><dl><dt>Configuration file</dt><dd><code>_config.yml</code> of site</dd></dl><dl><dt>Configuration format</dt><dd>Set <code>language</code> variable in your site’s <code>_config.yml</code> file.</dd></dl><pre><code>```yml _config.yml
+language:
+- en
+- zh-cn
+- it
+```
+The first row will be your site&#39;s default language.</code></pre>
+<dl><dt>Default configuration</dt><dd>If configuration is omitted, the default setting is <code>en</code>. Site will be displayed in English.</dd></dl><dl><dt>Notes</dt><dd>Currently, theme cutie only supports three languages: English, Italian and 简体中文.</dd></dl><dl><dt>Contributions</dt><dd>1. Italian translation is contributed by <a target="_blank" rel="noopener" href="https://github.com/Fastbyte01">@fastbyte01</a><br>    2. More translation is welcomed if you are interested in contribution. You may add new language files in <code>themes/cutie/languages</code> folder according to Hexo’s guideline: <a target="_blank" rel="noopener" href="https://hexo.io/docs/internationalization.html">https://hexo.io/docs/internationalization.html</a> and feel free to send me pull request.</dd></dl><h2 id="Scheme"><a href="#Scheme" class="headerlink" title="Scheme"></a>Scheme</h2><p>This concept is from <code>hexo-theme-next</code>, the most popular theme for Hexo, in which it uses different themes for different layout design. In theme cutie, it follows the similar idea and provides the opportunity to choose different layout design using scheme.</p>
+<dl><dt>Minimal version</dt><dd><em>Taurus</em>: <code>v2.0.0-alpha</code></dd></dl><dl><dt>Configuration file</dt><dd><code>source/_data/cutie.yml</code></dd></dl><dl><dt>Configuration format</dt><dd>Set <code>scheme</code> variable to scheme name to enable a theme scheme.</dd></dl><pre><code>```yml source/_data/cutie.yml
+global:
+  scheme: Taurus # Avaliable values: Taurus
+```</code></pre>
+<dl><dt>Default configuration</dt><dd>If configuration is omitted, the default setting is <code>Taurus</code>, scheme <code>Taurus</code> is enabled.</dd></dl><dl><dt>Notes</dt><dd>Currently, theme cutie only has <code>Taurus</code> theme, which is a two-column text-icon-based layout. Contribution is welcomed from developers or designers for new schemes.</dd></dl><dl><dt>For contributors</dt><dd>1. To add a new scheme, create a new file <code>your-scheme-name.css</code> in folder <code>themes/cutie/source/css/</code> and add your own scheme style in it.<br>    2. The system will automatically search for this css file and load it using the theme name <code>your-scheme-name</code> when changing the scheme configuration to <code>your-scheme-name</code>.</dd></dl><h2 id="Animation"><a href="#Animation" class="headerlink" title="Animation"></a>Animation</h2><dl><dt>Minimal version</dt><dd><code>v2.0.5-beta</code></dd></dl><dl><dt>Configuration file</dt><dd><code>source/_data/cutie.yml</code></dd></dl><dl><dt>Configuration format</dt><dd>Set <code>use_animation</code> to <code>true</code> or <code>false</code> to enable or disable site animations.</dd></dl><pre><code>```yml source/_data/cutie.yml
+global:
+  use_animation: true # Avaliable values: true, false
+```</code></pre>
+<dl><dt>Default configuration</dt><dd>If configuration is omitted, the default setting is <code>true</code>, animation is enabled.</dd></dl><h2 id="Search"><a href="#Search" class="headerlink" title="Search"></a>Search</h2><p>Theme cutie uses in-site search for the site. Use following steps to setup search page. Google custom search has been discarded since <code>v2.0.7</code>.</p>
+<dl><dt>Minimal version</dt><dd><code>v2.0.7</code></dd></dl><dl><dt>Configuration steps</dt><dd>1. No need for configuration, work out of box.<br>    2. If you are upgrading from versions below <code>v2.0.7</code>, delete the old search page you created for your site.</dd></dl><h2 id="404-Page"><a href="#404-Page" class="headerlink" title="404 Page"></a>404 Page</h2><p>Theme cutie uses built-in 404 page. It supports a custom 404 art or tencent 404 charity page (腾讯404公益).</p>
+<dl><dt>Minimal version</dt><dd><code>v2.0.7</code></dd></dl><dl><dt>Configuration file</dt><dd><code>source/_data/cutie.yml</code></dd></dl><dl><dt>Configuration steps</dt><dd>1. Delete the old <code>404.md</code> file of your site if you are upgrading from versions before <code>v2.0.7</code>.<br>    2. No need for configuration, work out of box.<br>    3. You may configure the built-in 404 page to use 腾讯公益404 or not, by default it is NOT using 腾讯公益404.</dd></dl><pre><code>```yml source/_data/cutie.yml
+# set true to enable 腾讯公益404
+page_404:
+  tencent_404: true
+```</code></pre>
+<h2 id="Social-network-links"><a href="#Social-network-links" class="headerlink" title="Social network links"></a>Social network links</h2><dl><dt>Minimal version</dt><dd><code>v2.0.0-alpha</code></dd></dl><dl><dt>Configuration file</dt><dd><code>source/_data/cutie.yml</code></dd></dl><dl><dt>Configuration format</dt><dd>Add social network names and links in the following format. Make sure the social network name matches the corresponding font awesome icon name. See <a target="_blank" rel="noopener" href="https://fontawesome.com/icons?d=gallery&s=brands">here</a> for the supported names and their icons.</dd></dl><pre><code>```yml source/_data/cutie.yml
+# As long as the name matches the font awesome icon name, you can add even more social links
+social:
+  github: https://github.com/qutang
+  linkedin: https://www.linkedin.com/in/qutang
+```</code></pre>
+<dl><dt>Default configuration</dt><dd>If configuration is omitted. No icons will be shown at the bottom right corner in the footer.</dd></dl><h2 id="Site-announcement"><a href="#Site-announcement" class="headerlink" title="Site announcement"></a>Site announcement</h2><dl><dt>Minimal version</dt><dd><code>v2.0.7</code></dd></dl><dl><dt>Configuration file</dt><dd><code>source/_data/cutie.yml</code></dd></dl><dl><dt>Configuration steps</dt><dd>1. Site announcement will display at the bottom left corner of home page as a purple box.<br>    2. Add following snippets to the configuration file to use, if omitted, site announcement is disabled.</dd></dl><pre><code>```yml source/_data/cutie.yml
+global:
+  announcement:
+    text: This is a sample site announcement.
+```</code></pre>
+<dl><dt>Notes</dt><dd>* The timeout duration for site announcement is 10s. The announcement popup will dismiss on click or on timeout.<br>    * You may use HTML markups in the announcement text. For example, you may add a link to the text.</dd></dl><h2 id="Site-header"><a href="#Site-header" class="headerlink" title="Site header"></a>Site header</h2><h3 id="Setup-site-logo"><a href="#Setup-site-logo" class="headerlink" title="Setup site logo"></a>Setup site logo</h3><dl><dt>Minimal version</dt><dd><code>v2.0.0-alpha</code></dd></dl><dl><dt>Configuration file</dt><dd><code>sources/_data/cutie.yml</code></dd></dl><dl><dt>Configuration format</dt><dd>Set variable <code>logo</code> to your own icon’s link. Link can be either an external image link, or a relative link.</dd></dl><pre><code>```yml source/_data/cutie.yml
+logo: /images/logo.svg
+```</code></pre>
+<dl><dt>Default configuration</dt><dd>If configuration is omitted. the following image will be used as the logo image.</dd></dl><pre><code>![theme-icon](/images/logo.svg)</code></pre>
+<h3 id="Setup-site-name-and-subtitle"><a href="#Setup-site-name-and-subtitle" class="headerlink" title="Setup site name and subtitle"></a>Setup site name and subtitle</h3><dl><dt>Minimal version</dt><dd><code>v2.0.0-alpha</code></dd></dl><dl><dt>Configuration file</dt><dd><code>_config.yml</code> of your site</dd></dl><dl><dt>Configuration format</dt><dd>Make sure your subtitle is not too log (better less than 30 characters).</dd></dl><pre><code>`title` is a standard Hexo configuration.
+`subtitle` is theme cutie&#39;s own configuration.
+
+```yml source/_data/cutie.yml
+title: Your site&#39;s title
+subtitle: Your site&#39;s subtitle
+```</code></pre>
+<dl><dt>Default configuration</dt><dd>If configuration is omitted. You will not see any texts in the header.</dd></dl><dl><dt>Note</dt><dd>This configuration requires restarting the server.</dd></dl><h3 id="Setup-navigation-menu"><a href="#Setup-navigation-menu" class="headerlink" title="Setup navigation menu"></a>Setup navigation menu</h3><dl><dt>Minimal version</dt><dd><code>v2.0.0-alpha</code></dd></dl><dl><dt>Configuration file</dt><dd><code>sources/_data/cutie.yml</code></dd></dl><dl><dt>Configuration format</dt><dd>Add navigation item in the following format. link and icon can be external or internal. You can literally add any link to it.</dd></dl><pre><code>```yml source/_data/cutie.yml
+menu:
+  Resume: 
+    link: /resume/
+  &quot;Menu item&quot;:
+    link: /aaa/
+```</code></pre>
+<dl><dt>Default configuration</dt><dd>If configuration is omitted. No text links will show up in the header navigation menu or in the dropdown menu on any view.</dd></dl><dl><dt>Notes</dt><dd>1. If there are more than four menu items, only the first four will be shown in the header (on desktop view). However, you can find all menu items in the last dropdown menu.<br>    2. Do not use a very long menu item name. No more than three words, because there is some display issue when the name gets long.<br>    3. Compared with <code>v1.x</code>, menu icon is no longer supported.</dd></dl><h2 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h2><h3 id="Use-Light-Gallery"><a href="#Use-Light-Gallery" class="headerlink" title="Use Light Gallery"></a>Use Light Gallery</h3><p>Theme cutie uses <a href="">Light Gallery</a> to support image modal display for <em>posts</em>. By default, it is enabled, but if you want to use other hexo plugins with similar functionality, you may want to disable it.</p>
+<dl><dt>Minimal version</dt><dd><code>v2.0.5-beta</code></dd></dl><dl><dt>Configuration file</dt><dd><code>source/_data/cutie.yml</code></dd></dl><dl><dt>Configuration format</dt><dd>Set <code>use_lightgallery</code> to be <code>true</code> or <code>false</code> to enable or disable light gallery display for post images.</dd></dl><pre><code>```yml source/_data/cutie.yml
+post:
+  use_lightgallery: true
+```</code></pre>
+<dl><dt>Default configuration</dt><dd>If configuration is omitted, by default light gallery is enabled for all posts.</dd></dl><dl><dt>Notes</dt><dd>It is currently not supported to enable or disable light gallery for an individual post.</dd></dl><h3 id="Use-post-version"><a href="#Use-post-version" class="headerlink" title="Use post version"></a>Use post version</h3><p>Theme cutie supports versioned post. Whenever the content of your post changes after you push your site, your visitors will see an unread badge on the post card in home page and archive pages.</p>
+<p>Theme cutie uses Hashing and Cookie to track the post content change and the post content a visitor has last read. This feature does NOT use <code>leancloud</code> backend.</p>
+<dl><dt>Minimal version</dt><dd><code>v2.0.8</code></dd></dl><h4 id="For-all-posts"><a href="#For-all-posts" class="headerlink" title="For all posts"></a>For all posts</h4><dl><dt>Configuration file</dt><dd><code>source/_data/cutie.yml</code></dd></dl><dl><dt>Configuration format</dt><dd>Set <code>enable_unread_badge</code> to be <code>true</code> to enable post versioning and unread badge or <code>false</code> to disable this feature for all the posts.</dd></dl><pre><code>```yml source/_data/cutie.yml
+---
+post:
+  enable_unread_badge: false
+---
+```</code></pre>
+<dl><dt>Default configuration</dt><dd>If configuration is omitted, by default this feature is <strong>disabled</strong> for all posts.</dd></dl><h4 id="For-an-individual-post"><a href="#For-an-individual-post" class="headerlink" title="For an individual post"></a>For an individual post</h4><dl><dt>Configuration file</dt><dd>A post’s front matter</dd></dl><dl><dt>Configuration format</dt><dd>Set <code>enable_unread_badge</code> to be <code>true</code> to enable post versioning and unread badge or <code>false</code> to disable this feature for the individual post.</dd></dl><pre><code>```yml post&#39;s front matter
+---
+enable_unread_badge: true
+---
+```</code></pre>
+<dl><dt>Default configuration</dt><dd>If configuration is omitted, the setting will roll back to the unread badge setting for all the posts.</dd></dl><dl><dt>Notes</dt><dd>This setting has higher priority than the setting for all the posts.</dd></dl><h3 id="Setup-TOC-level"><a href="#Setup-TOC-level" class="headerlink" title="Setup TOC level"></a>Setup TOC level</h3><p>*[TOC]: Table of content</p>
+<dl><dt>Minimal version</dt><dd><code>v2.0.5-beta</code></dd></dl><h4 id="For-all-posts-1"><a href="#For-all-posts-1" class="headerlink" title="For all posts"></a>For all posts</h4><dl><dt>Configuration file</dt><dd><code>source/_data/cutie.yml</code></dd></dl><dl><dt>Configuration format</dt><dd>Set <code>toc_level</code> under <code>post</code> to set the maximum level of headings in TOC for <em>all posts</em>. Allowed value is from <code>1</code> to <code>6</code>.</dd></dl><pre><code>```yml source/_data/cutie.yml
+post:
+  toc_level: 2
+```</code></pre>
+<dl><dt>Default configuration</dt><dd>If this configuration is omitted, by default maximum TOC level is set to 2 (meaning <code>##</code> in markdown).</dd></dl><h4 id="For-an-individual-post-1"><a href="#For-an-individual-post-1" class="headerlink" title="For an individual post"></a>For an individual post</h4><dl><dt>Configuration file</dt><dd>A post’s front matter</dd></dl><dl><dt>Configuration format</dt><dd>Use variable <code>toc_level</code> to set the maximum level of headings in TOC for <em>an individual posts</em>. Allowed value is from <code>1</code> to <code>6</code>.</dd></dl><pre><code>```yml
+---
+toc_level: 2
+---
+```</code></pre>
+<dl><dt>Default configuration</dt><dd>If variable is omitted in the post front matter, setting will fall back to the <a href="#for-all-posts">all-post-toc-setting</a>.</dd></dl><h3 id="Setup-post-comment"><a href="#Setup-post-comment" class="headerlink" title="Setup post comment"></a>Setup post comment</h3><dl><dt>Minimal version</dt><dd><code>v2.0.5-beta</code></dd></dl><h4 id="For-all-posts-2"><a href="#For-all-posts-2" class="headerlink" title="For all posts"></a>For all posts</h4><dl><dt>Configuration file</dt><dd><code>source/_data/cutie.yml</code></dd></dl><dl><dt>Configuration format</dt><dd>Set <code>allow_comment</code> to be <code>true</code> or <code>false</code> to enable or disable comment section to be displayed for <em>all posts</em>.</dd></dl><pre><code>```yml source/_data/cutie.yml
+post:
+  allow_comment: true
+```</code></pre>
+<dl><dt>Default configuration</dt><dd>If this configuration is omitted, by default comment section is enabled for all posts.</dd></dl><h4 id="For-an-individual-post-2"><a href="#For-an-individual-post-2" class="headerlink" title="For an individual post"></a>For an individual post</h4><dl><dt>Configuration file</dt><dd>A post’s front matter</dd></dl><dl><dt>Configuration format</dt><dd>Use variable <code>allow_comment</code> to enable or disable comment section.</dd></dl><pre><code>```yml
+---
+allow_comment: true
+---
+```</code></pre>
+<dl><dt>Default configuration</dt><dd>If variable is omitted in the post front matter, setting will fall back to the <a href="#for-all-posts-v2">all-post-comment-setting</a>.</dd></dl><h3 id="Setup-post-copyright"><a href="#Setup-post-copyright" class="headerlink" title="Setup post copyright"></a>Setup post copyright</h3><dl><dt>Minimal version</dt><dd><code>v2.0.5-beta</code></dd></dl><p>Theme cutie uses Creative Commons licenses for copyright configuration. We use three nested variables to cover the major licenses in Creative Commons.</p>
+<ul>
+<li><code>allow_share</code>: allow post to be shared (<code>true</code>) or not (<code>false</code>).<ul>
+<li><code>allow_modification</code>: allow post to be modified while sharing when <code>true</code>.</li>
+<li><code>allow_commercial</code>: allow post to be used for commercial purpose while sharing when <code>true</code>.</li>
+</ul>
+</li>
+</ul>
+<p>if <code>allow_share</code> is <code>false</code>, the other two variables will be ignored.</p>
+<h4 id="For-all-posts-3"><a href="#For-all-posts-3" class="headerlink" title="For all posts"></a>For all posts</h4><dl><dt>Configuration file</dt><dd><code>source/_data/cutie.yml</code></dd></dl><dl><dt>Configuration format</dt><dd>Use the three variables under <code>post</code> to configure the all-post copyright setting.</dd></dl><pre><code>```yml source/_data/cutie.yml
+post:
+  allow_share: true
+  allow_modification: false
+  allow_commercial: false
+```</code></pre>
+<dl><dt>Default configuration</dt><dd>If any of these configurations is omitted, the default setting for each one will fall back to following settings,<br>    * <code>allow_share: true</code>, by default allowing sharing all posts.<br>        * <code>allow_modification: false</code>, by default post is not allowed to be modified while sharing.<br>        * <code>allow_commercial: false</code>, by default post is not allowed to be used for commercial purposes while sharing.</dd></dl><pre><code>The corresponding default Creative Commons license is _CC BY-NC-ND 4.0_.</code></pre>
+<h4 id="For-an-individual-post-3"><a href="#For-an-individual-post-3" class="headerlink" title="For an individual post"></a>For an individual post</h4><dl><dt>Configuration file</dt><dd>A post’s front matter</dd></dl><dl><dt>Configuration format</dt><dd>Use the same three variables to configure copyright setting for a specific post.</dd></dl><pre><code>```yml
+---
+allow_share: true
+allow_modification: false
+allow_commercial: false
+---
+```</code></pre>
+<dl><dt>Default configuration</dt><dd>If any of these variables is omitted in the post front matter, setting will fall back to the <a href="#for-all-posts-v3">all-post copyright setting</a>.</dd></dl><h3 id="Enable-post-visit-and-comment-counts"><a href="#Enable-post-visit-and-comment-counts" class="headerlink" title="Enable post visit and comment counts"></a>Enable post visit and comment counts</h3><dl><dt>Minimal version</dt><dd><code>v2.0.5-beta</code></dd></dl><dl><dt>Prerequiste</dt><dd>This functionality only works when you use <code>valine</code> as <a href="#comment-systems">comment system</a> and use <code>leancloud</code> as backend.</dd></dl><dl><dt>Configuration steps</dt><dd>1. Configure <code>valine</code> comment system as described <a href="#configuration-for-valine-comment-system">here</a>.<br>    2. You are all set and post visit counts and post comment counts will appear in all related pages.</dd></dl><dl><dt>Notes</dt><dd>* <em>If backend is not set up properly, icons that show post visit and comment counts will be hidden.</em><br>    * Post visit counts only <strong>unique</strong> visitors (meaning visitors with unique IPs).</dd></dl><h3 id="Enable-post-thumb-up"><a href="#Enable-post-thumb-up" class="headerlink" title="Enable post thumb up"></a>Enable post thumb up</h3><dl><dt>Minimal version</dt><dd><code>v2.1.0</code></dd></dl><dl><dt>Prerequiste</dt><dd>This functionality only works when you use <code>valine</code> as <a href="#comment-systems">comment system</a> and use <code>leancloud</code> as backend.</dd></dl><dl><dt>Configuration steps</dt><dd>1. Configure <code>valine</code> comment system as described <a href="#configuration-for-valine-comment-system">here</a>.<br>    2. You are all set and post thumb up and thumb up counts will appear in all related pages.</dd></dl><dl><dt>Notes</dt><dd>* <em>If backend is not set up properly, icons that show post thumbup status and counts will be hidden.</em><br>    * Post thumb up counts only <strong>unique</strong> visitors (meaning visitors with unique IPs).</dd></dl><h3 id="Use-post-announcement"><a href="#Use-post-announcement" class="headerlink" title="Use post announcement"></a>Use post announcement</h3><dl><dt>Minimal version</dt><dd><code>v2.0.7</code></dd></dl><dl><dt>Configuration file</dt><dd>post’s front matter</dd></dl><dl><dt>Configuration steps</dt><dd>Use following snippet to add your post annoucement</dd></dl><pre><code>```yml post&#39;s front matter
+---
+announcement:
+  text: This is a sample post announcement!
+---
+```</code></pre>
+<dl><dt>Notes</dt><dd>* The default timeout for the announcement is 10 seconds. Note configurable for now.<br>    * You may use HTML markups in the announcement text.</dd></dl><h3 id="Set-post-excerpt"><a href="#Set-post-excerpt" class="headerlink" title="Set post excerpt"></a>Set post excerpt</h3><p>The post excerpt, displayed in the index page card on hover, may be manually set through front matter or adding the <code>&lt;!-- more --&gt;</code> tag plugin in the post.</p>
+<dl><dt>Minimal version</dt><dd><code>v2.0.11</code></dd></dl><dl><dt>Configuration file</dt><dd>post’s front matter, or tag plugin</dd></dl><dl><dt>Configuration waterfall</dt><dd><code>abstract</code> variable in the front matter has the highest priority if set.</dd></dl><pre><code>```yml post&#39;s front matter
+---
+abstract: A sample excerpt.
+---
+```
+
+If `abstract` is not set, theme cutie will search `&lt;!-- more --&gt;` tag in the post content to identify the excerpt section and cut off the first 150 characters to be used as excerpt.
+
+If both `abstract` and `&lt;!-- more --&gt;` are omitted, theme cutie will automatically chunk the first 150 characters in the post content to be used as excerpt.</code></pre>
+<h3 id="Set-post-icon"><a href="#Set-post-icon" class="headerlink" title="Set post icon"></a>Set post icon</h3><p>The post icon, displayed on the top left cornder of the index page card, may be manually set through front matter in the post.</p>
+<dl><dt>Minimal version</dt><dd><code>v2.0.0</code></dd></dl><dl><dt>Configuration file</dt><dd>post’s front matter</dd></dl><dl><dt>Configuration waterfall</dt><dd>If <code>icon</code> variable in the post front matter is set, the system will use this icon for post.</dd></dl><pre><code>```yml post&#39;s front matter
+---
+icon: /your/post/icon/path
+---
+```
+
+I recommend you to use absolute path (starting with `/`) for the image path.
+
+If `icon` variable is not set, but post belongs to category `notes` or `projects`, the system will use the default category icon for the post.
+
+If both conditions are not satisified, the system will use a randomly generated texture image for the post.</code></pre>
+<h2 id="Icon-sets"><a href="#Icon-sets" class="headerlink" title="Icon sets"></a>Icon sets</h2><h3 id="Select-an-icon-set"><a href="#Select-an-icon-set" class="headerlink" title="Select an icon set"></a>Select an icon set</h3><dl><dt>Minimal version</dt><dd><code>v2.0.5-beta</code></dd></dl><dl><dt>Configuration file</dt><dd><code>source/_data/cutie.yml</code></dd></dl><dl><dt>Configuration format</dt><dd>Change icon set by changing the name of the icon set in the following snippet. There are three available icon sets in the theme by default: <code>blue-line</code>, <code>blue-shadow</code>, and <code>colorful-outlined</code>.</dd></dl><pre><code>```yml source/_data/cutie.yml
+global:
+  icon_set: blue-line # Available values in theme: blue-line, blue-shadow, colorful-outlined
+```</code></pre>
+<dl><dt>Default configuration</dt><dd><code>blue-line</code></dd></dl><p>Illustration</p>
+<h3 id="Add-a-new-icon-set"><a href="#Add-a-new-icon-set" class="headerlink" title="Add a new icon set"></a>Add a new icon set</h3><dl><dt>Minimal version</dt><dd><code>v2.0.5-beta</code></dd></dl><dl><dt>Configuration path</dt><dd><code>source/images/</code></dd></dl><dl><dt>Configuration steps</dt><dd>1. Create a folder named <code>icons</code> in <code>source/images/</code> folder.<br>    2. Create an icon set folder <code>icon-set-name</code>(change it to your desired name) in <code>source/images/icons/</code> folder.<br>    3. Add your own four icons (keep the filename consistent) in <code>svg</code> format to <code>source/images/icons/icon-set-name/</code> folder.<br>        1. <code>search.svg</code><br>        2. <code>archive.svg</code><br>        3. <code>menu.svg</code><br>        4. <code>toc.svg</code><br>    4. Use your new icon set name <code>icon-set-name</code> in <a href="#select-an-existing-icon-set">Select an existing icon set</a></dd></dl><h2 id="Comment-systems"><a href="#Comment-systems" class="headerlink" title="Comment systems"></a>Comment systems</h2><h3 id="Select-comment-systems"><a href="#Select-comment-systems" class="headerlink" title="Select comment systems"></a>Select comment systems</h3><dl><dt>Minimal version</dt><dd><code>v2.0.0-alpha</code></dd></dl><dl><dt>User configuration location</dt><dd><code>source/_data/cutie.yml</code></dd></dl><dl><dt>Configuration format</dt><dd><code>yml comment system     global:       comment_system: valine # Available values: valine, gitment, disqus     </code></dd></dl><dl><dt>Possible values</dt><dd><code>valine</code>(default), <code>gitment</code>, <code>disqus</code>, <code>livere</code></dd></dl><p>After selecting one of the comment systems, you need to further configure it.</p>
+<h3 id="Configuration-for-valine-comment-system"><a href="#Configuration-for-valine-comment-system" class="headerlink" title="Configuration for valine comment system"></a>Configuration for valine comment system</h3><dl><dt>Minimal version</dt><dd><code>v2.0.0-alpha</code></dd></dl><dl><dt>User configuration location</dt><dd><code>source/_data/cutie.yml</code></dd></dl><dl><dt>Configuration format</dt><dd><code>yml valine configuration     valine:       appId:       appKey:       placeholder:     </code><br>    See <a target="_blank" rel="noopener" href="https://valine.js.org/">https://valine.js.org</a> to setup the backend and fill the values.</dd></dl><dl><dt>Default values</dt><dd>No default values, must fill if using the system.</dd></dl><h3 id="Configuration-for-gitment-comment-system"><a href="#Configuration-for-gitment-comment-system" class="headerlink" title="Configuration for gitment comment system"></a>Configuration for gitment comment system</h3><dl><dt>Minimal version</dt><dd><code>v2.0.0-alpha</code></dd></dl><dl><dt>User configuration location</dt><dd><code>source/_data/cutie.yml</code></dd></dl><dl><dt>Configuration format</dt><dd><code>yml gitment configuration     gitment:       owner:       repo:       client_id:       client_secret:     </code><br>    See <a target="_blank" rel="noopener" href="https://github.com/imsun/gitment">https://github.com/imsun/gitment</a> to setup the backend and fill the values.</dd></dl><dl><dt>Default values</dt><dd>No default values, must fill if using the system.</dd></dl><h3 id="Configuration-for-Disqus-comment-system"><a href="#Configuration-for-Disqus-comment-system" class="headerlink" title="Configuration for Disqus comment system"></a>Configuration for Disqus comment system</h3><dl><dt>Minimal version</dt><dd><code>v2.0.0-alpha</code></dd></dl><dl><dt>User configuration location</dt><dd><code>source/_data/cutie.yml</code></dd></dl><dl><dt>Configuration format</dt><dd><code>yml disqus configuration     disqus:       shortname:     </code><br>    See <a target="_blank" rel="noopener" href="https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-">https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-</a> to setup the backend and fill the value.</dd></dl><dl><dt>Default values</dt><dd>No default values, must fill if using the system.</dd></dl><h3 id="Configuration-for-Livere-comment-system"><a href="#Configuration-for-Livere-comment-system" class="headerlink" title="Configuration for Livere comment system"></a>Configuration for Livere comment system</h3><dl><dt>Minimal version</dt><dd><code>v2.0.11</code></dd></dl><dl><dt>User configuration location</dt><dd><code>source/_data/cutie.yml</code></dd></dl><dl><dt>Configuration format</dt><dd><code>yml livere configuration     livere:       id: &#39;city&#39; # use &#39;city&#39; if using free version or `premium` if using paid version       uid:      </code><br>    The <code>uid</code> is the string you will see in the snippet provided by livere during installation, as shown in the following screenshot.</dd></dl><pre><code>![Livere setup screenshot](livere_setup.png)</code></pre>
+<dl><dt>Default values</dt><dd>No default values, must fill if using the system.</dd></dl></article><section class="jump-container is-flex is-justify-content-space-between my-6"><!-- em is empty placeholder--><em></em><a class="button is-small is-default py-4" href="/Claudia-theme-blog/2017/12/20/Typography%20and%20tags/" title="Typography and tags"><span class="has-text-weight-semibold">Next: Typography and tags</span><i class="iconfont icon-next ml-2 has-text-grey"></i></a></section><article class="mt-6 comment-container"><script src="https://utteranc.es/client.js" repo="Haojen/Claudia-theme-blog" issue-term="pathname" theme="github-light" async></script></article></div></div></main></main><footer class="is-flex is-flex-direction-column is-align-items-center is-flex-shrink-0 is-family-serif"><section class="sns-container"><a title="twitter" target="_blank" rel="noopener nofollow" href="//twitter.com//"><i class="iconfont icon-twitter"></i></a><!-- Github--><a title="github" target="_blank" rel="noopener nofollow" href="//github.com/haojen"><i class="iconfont icon-github"></i></a><!-- Ins--><a title="instagram" target="_blank" rel="noopener nofollow" href="//www.instagram.com//"><i class="iconfont icon-ins"></i></a><!-- RSS--><a title="rss" target="_blank" rel="noopener nofollow" href="/Claudia-theme-blog/atom.xml"><i class="iconfont icon-rss"></i></a><!-- 知乎--><!-- 领英--><!-- 脸书--><a title="facebook" target="_blank" rel="noopener nofollow" href="//www.facebook.com//"><i class="iconfont icon-tian7_facebook"></i></a></section><p><span>Copyright ©</span><span> Haojen 2021</span></p><div class="is-flex"><p>Powered by Hexo｜</p><p class="is-flex is-justify-content-center"><a title="Hexo theme author" target="_blank" rel="noopener" href="//github.com/haojen">Theme by &nbspHaojen&nbsp</a></p><div style="margin-top: 2px"><a class="github-button" title="github-button" target="_blank" rel="noopener" href="https://github.com/haojen/hexo-theme-Claudia" data-color-scheme="no-preference: light; light: light; dark: dark;" data-show-count="true"></a></div></div></footer><script async defer src="https://buttons.github.io/buttons.js"></script><script src="/Claudia-theme-blog/js/post.js"></script></body></html>
