@@ -1,13 +1,26 @@
 #postTopic {
+  cursor: pointer;
   will-change: transform;
   transform: translateY(100%);
-  transition: transform 100ms linear;
   color: var(--primary-text-color); }
-  #postTopic.is-show {
-    transition: transform 200ms linear;
+  #postTopic.is-show-scrollToTop-tips {
+    transition: transform 300ms linear 300ms;
+    transform: translateY(-100%); }
+  #postTopic.is-flash-scrollToTop-tips {
+    transition: transform 300ms linear 900ms;
     transform: translateY(0); }
-  #postTopic.is-no-animate {
-    transition: none; }
+  #postTopic.is-switch-post-title {
+    transition: none;
+    transform: translateY(0); }
+  #postTopic.is-show-post-title {
+    transition: transform 300ms linear;
+    transform: translateY(0); }
+  #postTopic.is-hidden-topic-bar {
+    transition: transform 100ms linear;
+    transform: translateY(100%); }
+  #postTopic.immediately-show {
+    transition: none;
+    transform: translateY(0); }
 
 .post-page .post-content code {
   border-radius: 4px;
