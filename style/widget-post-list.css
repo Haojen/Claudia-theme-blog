@@ -155,13 +155,26 @@
   .post-container .recent-widget section time {
     font-size: 12px; }
 
+.post-container .archives-widget > section {
+  overflow: auto;
+  max-height: 45vh; }
+
+.post-container .archives-widget.is-in-archive-page {
+  max-height: 100%; }
+
 .post-container .tag-widget > section {
   overflow: auto;
   max-height: 30vh; }
 
-.post-container .archives-widget > section {
+.post-container .tag-widget.is-in-tag-page > section {
+  max-height: 100%; }
+
+.post-container .category-page > section {
   overflow: auto;
-  max-height: 45vh; }
+  max-height: 40vh; }
+
+.post-container .category-page.categories-widget > section {
+  max-height: 100%; }
 
 .post-container .paginator .page-number,
 .post-container .paginator .extend {
