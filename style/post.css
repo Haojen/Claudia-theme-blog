@@ -1,8 +1,9 @@
 #postTopic {
   cursor: pointer;
   will-change: transform;
-  transform: translateY(100%);
-  color: var(--primary-text-color); }
+  transform: translateY(100%); }
+  #postTopic p {
+    color: var(--primary-text-color); }
   #postTopic.is-show-scrollToTop-tips {
     transition: transform 300ms linear 300ms;
     transform: translateY(-100%); }
