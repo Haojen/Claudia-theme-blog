@@ -104,7 +104,6 @@ feed:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: hexo-theme-Claudia
-#theme: hexo-theme-Claudia
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

@@ -7,7 +7,7 @@ version: 3
 date: 2018-02-12 00:00:00 Z
 ---
 
-![$cover](/images/tree.png)
+![cover](images/tree.png)
 
 Theme cutie has evolved from v1.x to v2.x with a refreshed and fine tuned design and more features. Follow the following instruction to install and use it. You may navigate this website to experience the new look and interaction of v2.x.
 
@@ -862,3 +862,9 @@ Configuration format
 
 Default values
 : No default values, must fill if using the system.
+
+
+## Math Test
+{% mathjax %}
+$\gamma = \cfrac{1}{n_{jm}} \sum_{x_i \in R_{i,j}}y_i - F_{m-1}(x_i)$
+{% endmathjax %}
