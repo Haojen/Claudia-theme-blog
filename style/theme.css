@@ -11,7 +11,8 @@
   --table-border-color: #dbdbdb;
   --pre-code-bg-color: #f5f5f573;
   --skeleton-bg-color: #f5f5f5;
-  --skeleton-flash-color: 0.5; }
+  --skeleton-flash-color: 0.5;
+  --avatar-border-color: #fff; }
 
 :root.appearance-dark {
   --primary-bg-color: #181818;
@@ -26,7 +27,8 @@
   --table-border-color: #aaa;
   --pre-code-bg-color: #ffffff03;
   --skeleton-bg-color: #2b2b2b;
-  --skeleton-flash-color: 0.05; }
+  --skeleton-flash-color: 0.05;
+  --avatar-border-color: rgba(255, 255, 255, 0.05); }
 
 :root.appearance-auto {
   --primary-bg-color: #fff;
@@ -41,7 +43,8 @@
   --table-border-color: #dbdbdb;
   --pre-code-bg-color: #f5f5f573;
   --skeleton-bg-color: #f5f5f5;
-  --skeleton-flash-color: 0.5; }
+  --skeleton-flash-color: 0.5;
+  --avatar-border-color: #fff; }
   @media (prefers-color-scheme: dark) {
     :root.appearance-auto {
       --primary-bg-color: #181818;
@@ -56,7 +59,8 @@
       --table-border-color: #aaa;
       --pre-code-bg-color: #ffffff03;
       --skeleton-bg-color: #2b2b2b;
-      --skeleton-flash-color: 0.05; } }
+      --skeleton-flash-color: 0.05;
+      --avatar-border-color: rgba(255, 255, 255, 0.05); } }
 
 :root.appearance-dark, :root.appearance-auto, :root.appearance-light {
   background: var(--primary-bg-color); }

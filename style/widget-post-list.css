@@ -85,14 +85,16 @@
 .post-container .profile-widget {
   min-height: 300px;
   padding-bottom: 0; }
-  .post-container .profile-widget .avatar, .post-container .profile-widget .avatar-placeholder {
+  .post-container .profile-widget img {
+    object-fit: cover; }
+  .post-container .profile-widget .avatar {
     position: relative;
     width: 180px;
     height: 180px;
     margin-top: 10px;
     border-radius: 50%;
-    box-shadow: 0 6px 30px -10px rgba(0, 0, 0, 0.1);
-    border: 7px solid var(--border-line-color); }
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    border: 7px solid var(--avatar-border-color); }
   .post-container .profile-widget .avatar-placeholder:after {
     content: "\e62a";
     font-size: 80px;
