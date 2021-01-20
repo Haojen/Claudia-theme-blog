@@ -33,10 +33,6 @@
     word-break: break-word; }
     .post-container .post-item-card .post-card-content time {
       font-size: 14px; }
-    .post-container .post-item-card .post-card-content .read-more-btn {
-      border-radius: 6px;
-      color: var(--second-text-color);
-      background: var(--third-bg-color); }
 
 .post-container .aside-card-container {
   padding: 10px;

@@ -94,6 +94,7 @@
     background: transparent;
     border: 2px solid darkorange; }
   :root body .button.is-default {
+    height: 40px;
     border: none;
     border-radius: 6px;
     color: var(--second-text-color);
