@@ -5,6 +5,7 @@
   --primary-text-color: #4a4a4a;
   --second-text-color: #4a4a4a;
   --top-bar-bg-color: rgba(255, 255, 255, 0.85);
+  --border-line-color-2: rgba(0, 0, 0, 0.03);
   --border-line-color: rgba(0, 0, 0, 0.05);
   --blockquote-border-color: #dbdbdb;
   --table-border-color: #dbdbdb;
@@ -19,6 +20,7 @@
   --primary-text-color: #fff;
   --second-text-color: #aaa;
   --border-line-color: rgba(255, 255, 255, 0.05);
+  --border-line-color-2: rgba(255, 255, 255, 0.02);
   --top-bar-bg-color: rgba(24, 24, 24, 0.8);
   --blockquote-border-color: #aaa;
   --table-border-color: #aaa;
@@ -33,6 +35,7 @@
   --primary-text-color: #4a4a4a;
   --second-text-color: #4a4a4a;
   --top-bar-bg-color: rgba(255, 255, 255, 0.85);
+  --border-line-color-2: rgba(0, 0, 0, 0.03);
   --border-line-color: rgba(0, 0, 0, 0.05);
   --blockquote-border-color: #dbdbdb;
   --table-border-color: #dbdbdb;
@@ -47,6 +50,7 @@
       --primary-text-color: #fff;
       --second-text-color: #aaa;
       --border-line-color: rgba(255, 255, 255, 0.05);
+      --border-line-color-2: rgba(255, 255, 255, 0.02);
       --top-bar-bg-color: rgba(24, 24, 24, 0.8);
       --blockquote-border-color: #aaa;
       --table-border-color: #aaa;

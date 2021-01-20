@@ -4,7 +4,8 @@
   overflow: hidden;
   box-shadow: 0 6px 30px -10px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
-  background: var(--second-bg-color); }
+  background: var(--second-bg-color);
+  border: 1px solid var(--border-line-color-2); }
   .post-container .post-item-card > header {
     overflow: hidden;
     z-index: 1;
@@ -42,7 +43,8 @@
   margin-bottom: 15px;
   box-shadow: 0 6px 30px -10px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
-  background: var(--second-bg-color); }
+  background: var(--second-bg-color);
+  border: 1px solid var(--border-line-color-2); }
 
 .post-container .categories-widget h3,
 .post-container .archives-widget h3,
