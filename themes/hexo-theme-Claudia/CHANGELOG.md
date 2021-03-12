@@ -1,5 +1,15 @@
 # Changelog
 
+## 03.12.2021
+- Add Valine comment system
+- Adjust about page padding on mobile devices
+
+## 03.08.2021
+- Add footnotes
+
+## 01.31.2021
+- Fix if no have 0 length category、tag
+
 ## 01.20.2021
 - Improve readability
 - Fix i18N bugs

@@ -22,7 +22,7 @@
 ![cover](./screenshot/claudia-cover-v2.png)
 
 ## Changelog
-Recent update [01.20.2021](CHANGELOG.md)
+Recent update [03.12.2021](CHANGELOG.md)
 
 ## How to Use
 
@@ -47,6 +47,7 @@ user:
   avatar: /images/avatar.jpg
   location:
   description:
+  footnotes:
 
 # config you SNS
 social:
@@ -91,8 +92,15 @@ comment_utteranc:
   repo: Haojen/myBlogRepo # change to your blog repo
 ```
 
-#### 2. DISQUS
-developing..
+#### 2. Valine
+Documents： https://valine.js.org/quickstart.html
+
+```yaml
+comment_valine:
+  enable: true
+  appId:
+  appKey:
+```
 
 ### Appearance
 ```yaml
