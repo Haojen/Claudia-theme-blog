@@ -25,7 +25,7 @@ user:
   avatar: /images/avatar.jpg
   location: In the dust
   description: May the Force be with you
-  footnotes: #footnotes
+  footnotes: # footnotes
 
 # documents: https://github.com/utterance/utterances
 # API config: https://utteranc.es/
@@ -39,6 +39,11 @@ comment_valine:
   enable: false
   appId:
   appKey:
+
+comment_disqus:
+    enable: false
+    url:  # the url of your website main domain like this https://xxx.xxx/
+    name: # the short name in disqus
 
 # dark
 # light
@@ -54,3 +59,6 @@ ga_domain:
 
 # Baidu Analytics
 ba_track_id:
+
+# picture of about page
+about_pic: about.png
