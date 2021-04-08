@@ -22,7 +22,7 @@
 ![cover](./screenshot/claudia-cover-v2.png)
 
 ## Changelog
-[Recent update 03.26.2021](CHANGELOG.md)
+[Recent update 04.08.2021](CHANGELOG.md)
 
 ## How to Use
 
@@ -90,7 +90,7 @@ Project repo: https://github.com/utterance/utterances
 ```yaml
 comment_utteranc:
   enable: true
-  repo: Haojen/myBlogRepo # change to your blog repo
+  repo: Haojen/myBlogRepo # Change to your blog repo
 ```
 
 #### 2. Valine
