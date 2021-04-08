@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .post-container .post-item-card {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   overflow: hidden;
   box-shadow: 0 6px 30px -10px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
