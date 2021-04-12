@@ -6,7 +6,7 @@ photos:
 - /assets/wallpaper-878514.jpg
 - http://placehold.it/350x150.jpg
 ---
-
+![cover](https://source.unsplash.com/daily)
 This post contains 4 photos:
 
 - Widescreen wallpaper
