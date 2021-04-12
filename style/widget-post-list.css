@@ -28,7 +28,11 @@
       font-size: 0; }
     .post-container .post-item-card > header .post-cover-img {
       max-height: 360px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); }
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      will-change: transform;
+      transition: transform 500ms; }
+    .post-container .post-item-card > header:hover .post-cover-img {
+      transform: scale(1.04); }
   .post-container .post-item-card .post-card-content {
     word-break: break-word; }
     .post-container .post-item-card .post-card-content time {
