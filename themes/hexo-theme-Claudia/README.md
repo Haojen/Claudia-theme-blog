@@ -5,13 +5,12 @@
 
 <p align="center">
   <img  alt="Hexo version" src="https://img.shields.io/badge/hexo%20version-%3E%3D%204.2-brightgreen">
-  <img  alt="Build blog" src="https://github.com/Haojen/Claudia-theme-blog/workflows/Build%20Claudia%20blog/badge.svg?branch=master">
   <img  alt="GitHub issues" src="https://img.shields.io/github/issues/Haojen/hexo-theme-Claudia">
   <img  alt="GitHub license" src="https://img.shields.io/github/license/Haojen/hexo-theme-Claudia">
 </p>
 
 <p align="center">
-  <a href="https://haojen.github.io/Claudia-theme-blog/" rel="nofollow">👉 Demo</a>
+  <a href="https://haojen.github.io/Claudia-theme-blog/" rel="nofollow">Demo</a>
 </p>
 
 <p align="center">
@@ -22,20 +21,25 @@
 ![cover](./screenshot/claudia-cover-v2.png)
 
 ## Changelog
-[Recent update 04.12.2021](CHANGELOG.md)
+[Recent update 11.06.2022](CHANGELOG.md)
 
 ## How to Use
 
 ### Install depend
 
-Install to Hexo blog root directory, **Not theme directory** 
+Install to Hexo blog root directory, **Not theme directory**
 ```bash
 npm install hexo-renderer-pug 
-npm install hexo-renderer-sass
+npm install hexo-renderer-dartsass
 npm install hexo-generator-search
 
 # if you need RSS, you must be install this plugin
 npm install hexo-generator-feed
+
+# Flowchat
+npm install hexo-filter-flowchart        
+# Math
+npm install hexo-renderer-mathjax
 ```
 
 ### User's profile
@@ -58,6 +62,13 @@ social:
   linkedin:
   instagram:
   github: haojen
+
+# Page icon
+favicon: images/favicon.ico
+
+friend_links:
+  - title: Link1
+    link: https://www.link1.test.com/
 
 ```
 
@@ -113,7 +124,7 @@ appearance: auto
 
 ### Code highlighting
 
-1. **Disable** the default hexo highlight configuration(modify your `root/_config.yml` in root directory of hexo)
+1. **Disable** the default hexo highlight configuration(modify your `_config.yml` in root directory of hexo), and then run `hexo clean` to delete cache
 
 ```yaml
 highlight:
@@ -147,8 +158,14 @@ layout: about
 ### My demo blog config
 https://github.com/Haojen/Claudia-theme-blog
 
-## And my another Hexo theme
-This it [Hexo-theme-Anisina](https://github.com/Haojen/hexo-theme-Anisina), hope you like it!
+## Other My Project
+- [Hexo-theme-Anisina](https://github.com/Haojen/hexo-theme-Anisina)
+- [Vimkey - a browser extension, let you use keyboard control browser](https://github.com/Haojen/vimkey)
+- [PlanetTab - a cool dynamic 3D planet browser new tab](https://github.com/Haojen/planet-tab)
+
+
+## Buy me coffee ☕️
+<img src="./screenshot/BuyMeCoffeeQRCode.png" width="300">
 
 ## License
-MIT © [haojen ma](http://haojen.github.io)
+MIT © [HAOZHEN MA](http://haojen.github.io)

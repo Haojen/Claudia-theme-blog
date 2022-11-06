@@ -22,7 +22,7 @@ social:
 
 user:
   name: Haojen
-  avatar: /images/avatar.jpg
+  avatar:
   location: In the dust
   description: May the Force be with you
   footnotes: # footnotes
@@ -51,7 +51,17 @@ comment_disqus:
 appearance: auto # Default value is auto
 
 # Miscellaneous
-favicon: /images/favicon.png
+favicon: images/favicon.ico
+
+friend_links:
+  - title: Google
+    link: https://www.google.com/
+  - title: Github
+    link: https://www.github.com/
+  - title: V2EX
+    link: https://v2ex.com/
+  - title: Twitter
+    link: https://twitter.com/
 
 # Google Analytics
 ga_track_id:
@@ -62,3 +72,6 @@ ba_track_id:
 
 # picture of about page
 about_pic: about.png
+
+image_zoom:
+  enable: true
